@@ -22,20 +22,20 @@ export default function Greeting(props) {
               <h1 className="greeting-sub" style={{ color: theme.grayText }}>
                 I'm <mark data-entity="person">{greeting.sub}</mark>
               </h1>
-              <h1 className="greeting-typewriter" style={{color: theme.blue}}>
+              <h1 className="greeting-typewriter" style={{ color: theme.blue }}>
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("Data Scientist(NLP)")
+                      .typeString("Data Scientist")
                       .pauseFor(200)
                       .deleteAll()
-                      .typeString("Web Developer")
+                      .typeString("Data Engineer")
                       .pauseFor(200)
                       .deleteAll()
-                      .typeString("UI/UX Designer")
+                      .typeString("AI/ML Engineer")
                       .pauseFor(200)
                       .deleteAll()
-                      .typeString("IT Engineer")
+                      .typeString("UiPath Developer")
                       .pauseFor(200)
                       .start();
                   }}
@@ -47,14 +47,22 @@ export default function Greeting(props) {
               </h1>
               <span
                 className="greeting-text-span subTitle"
-                style={{ color: theme.text }}>
+                style={{ color: theme.text }}
+              >
                 <div className="entities">
-                  A <mark data-entity="noun">Data Science practitioner</mark>{" "}
-                  who thrives to{" "}
-                  <mark data-entity="verb">leverage Startups</mark> using
-                  AI-based solutions along with{" "}
-                  <mark data-entity="skill">Web Development</mark> and a blend
-                  of <mark data-entity="freelance">UI/UX Designing</mark>
+                  A curious mind at the intersection of AI, automation, and
+                  problem-solving. I’m a{" "}
+                  <mark data-entity="noun">Data Scientist</mark> who{" "}
+                  <mark data-entity="verb">enjoys turning </mark> raw data into
+                  real-world impact — whether that means{" "}
+                  <mark data-entity="skill">teaching models</mark> to understand
+                  documents,{" "}
+                  <mark data-entity="skill">building automation pipelines</mark>{" "}
+                  , or{" "}
+                  <mark data-entity="skill">
+                    making AI systems more explainable and reliable
+                  </mark>
+                  . Always learning, always building!
                 </div>
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />
