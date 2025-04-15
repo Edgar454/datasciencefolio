@@ -503,14 +503,6 @@ const resumeright = {
             "#121/444 in IBM SkillsBuild Hydropower Climate Optimisation Challenge (Zindi)",
           ],
         },
-        {
-          title: "Achievements",
-          content: [
-            "Designing Team Head at ACM-VIT",
-            "5⭐ Gold Badges for Python & Problem Solving at HackerRank ",
-            "Tableau Analyst & Consumer Badge by Tableau Official",
-          ],
-        },
       ],
     },
     {
