@@ -10,7 +10,7 @@ const seo = {
   og: {
     title: "Edgar Meva'a Portfolio",
     type: "website",
-    url: "http://rohankokkula.ml/",
+    url: "https://edgar-meva-portfolio.netlify.app/home",
   },
 };
 
@@ -128,7 +128,7 @@ const skills = {
       ],
     },
     {
-      title: "Web Development",
+      title: "Deep Learning and Computer Vision",
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive websites using HTML5, CSS3, BootStrap5, ReactJS & NodeJS",
@@ -196,7 +196,7 @@ const skills = {
       ],
     },
     {
-      title: "UI/UX Design",
+      title: "UI Automation",
       fileName: "DesignImg",
       skills: [
         "⚡ Designing highly attractive user interfaces for mobile and web applications",
@@ -477,16 +477,16 @@ const resumeright = {
       data: [
         {
           title: "Master en Data Science et Intelligence Artificielle",
-          subtitle: "Université Mundiapolis , MAroc",
+          subtitle: "Université Mundiapolis , Maroc",
           date: "2022 - 2024",
-          content: ["CGPA: 8.06/10"],
+          content: [],
         },
         {
           title: "Licence en Statistiques Appliquées",
           subtitle:
             "Ecole Nationale de la Statisque de la Planification et de la Démographie (ENSPD) , Benin",
           date: "2019 - 2021",
-          content: ["Precentage: 80%"],
+          content: [],
         },
       ],
     },
@@ -521,35 +521,61 @@ const resumeright = {
             "Enhancing Regulatory Decision-Making through a Retrieval-Augmented Generation (RAG) Based LLM",
           subtitle: "Omdena.com",
           content: [
-            "Created and hosted a website for consultancy providers in Kids Education Domain",
+            "J'ai participé à ce challenge dont l'objectif était double :",
+            " digitaliser d'anciens documents administratifs pour en assurer la conservation",
+            " faciliter leur consultation via un assistant de recherche basé sur une architecture RAG (Retrieval-Augmented Generation).",
+            "J'ai contribué dans deux équipes clés :",
+            "🔹 Prétraitement des données",
+            "J'ai participé à l'extraction du texte via OCR, à son nettoyage (suppression des éléments peu pertinents comme les en-têtes et pieds de page) et à la mise en place d’un pipeline automatisé d'acquisition et de traitement des documents via GitHub Actions.",
+            "🔹 Évaluation des performances",
+            "J’ai développé un pipeline d’évaluation des réponses de notre assistant en utilisant le paradigme 'LLM as a judge', permettant de mesurer la pertinence et la justesse des résultats générés.",
           ],
         },
         {
           title: "Local News Aggregator and Analyzer for Kitwe, Zambia",
           subtitle: "pranavphulware.netlify.app",
           content: [
-            "Built a personal Filmography portfolio for a friend and later hosted it at Netlify",
+            "J’ai participé à ce projet dont l’objectif était de lutter contre la désinformation dans la province de Kitwe, en Zambie, en proposant une plateforme de vérification de l'information locale.",
+            "🔹 Contribution à la modélisation",
+            "J’ai intégré l’équipe de modélisation où j’ai entraîné un modèle de détection de fake news en temps réel, basé sur une approche TF-IDF + régression logistique, atteignant 90 % de précision avec un F1-score équivalent.",
+            "🔹 Apprentissages clés",
+            "Bien que mon modèle n’ait pas été retenu pour la version finale, ce travail m’a permis de découvrir des techniques avancées comme la focal loss pour gérer les déséquilibres de classes. J’ai également appris à utiliser les flux RSS pour collecter automatiquement des données textuelles en ligne.",
           ],
         },
         {
           title: "Karimganj Flood Prediction Challenge",
           subtitle: "pranavphulware.netlify.app",
           content: [
-            "Built a personal Filmography portfolio for a friend and later hosted it at Netlify",
+            "J’ai participé à ce projet dont l’objectif était d’aider les autorités à anticiper les inondations dans la région de Karimganj, en Inde, afin de pouvoir mettre en place les mesures de prévention plus tôt.",
+            "Notre équipe était chargée de développer un modèle de prévision (forecasting) basé sur des données météorologiques, notamment via l’API OpenMeteo, pour prédire les risques d'inondation à court terme.",
+            "🔹 Rôle : Leader de l’équipe déploiement",
+            "En tant que responsable de l’équipe de déploiement, j’ai :",
+            "Construit l’interface finale de l’application avec Streamlit,",
+            "Géré l'intégration des modèles de prédiction avec les pipelines de prétraitement,",
+            "Assuré la communication entre les différentes API et composants du système.",
+            "Ce projet m’a permis de développer des compétences transversales en déploiement de modèles ML, gestion d’équipe technique, et conception d’interfaces utilisateurs simples et efficaces.",
           ],
         },
         {
           title: "Adaptive AI Tutor for Refugee Education in Jordan (Phase 2)",
           subtitle: "pranavphulware.netlify.app",
           content: [
-            "Built a personal Filmography portfolio for a friend and later hosted it at Netlify",
+            "Ce projet en cours vise à faciliter l’accès à l’éducation pour les réfugiés en Cisjordanie, qui manquent souvent d’enseignants en raison de la guerre, de la famine et d’autres conditions extrêmes.",
+            "L’objectif est de développer un tuteur intelligent basé sur une architecture RAG (Retrieval-Augmented Generation) capable d’accompagner les élèves dans leur apprentissage.",
+            "Les principaux défis résident dans :",
+            ". La portée éducative, avec un modèle devant fournir des explications claires, structurées et illustrées,",
+            ". La dimension culturelle et linguistique, car le tuteur doit interagir en arabe, tout en respectant les sensibilités du public cible.",
+            "🎯 Mon rôle actuel :",
+            "Je fais partie de l’équipe de modélisation, où je contribue à la conception et à l’adaptation du modèle RAG pour qu’il puisse jouer le rôle de tuteur personnalisé.",
           ],
         },
         {
-          title: "Mobile App application to parse images",
+          title: "Mobile OCR App for Automated Member Registration",
           subtitle: "pranavphulware.netlify.app",
           content: [
-            "Built a personal Filmography portfolio for a friend and later hosted it at Netlify",
+            "J’ai développé une application mobile pour mon église afin de faciliter l’enregistrement des nouveaux adhérents.",
+            "Ce projet visait à remplacer la saisie manuelle des informations par un processus automatisé à partir d’une simple photo.",
+            "Grâce à la reconnaissance optique de caractères (OCR), l’application extrait les données des formulaires papier et les enregistre automatiquement dans la base de données, permettant ainsi de gagner un temps précieux et réduire les erreurs humaines.",
           ],
         },
       ],
