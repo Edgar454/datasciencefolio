@@ -1,27 +1,26 @@
-import React, {Component } from "react";
-// import React, {useRef,useEffect,Component } from "react";
-// import lottie from 'lottie-web';
-import data from "./web.svg"
-// export default function FullStackImg(){
-//     const container = useRef(null)
-//     useEffect(() => {
-//       lottie.loadAnimation({
-//         container: container.current,
-//         renderer: 'svg',
-//         loop: true,
-//         autoplay: true,
-//         animationData: require('./htmldev.json')
-//       })
-//     }, [])
-//     return (
-//       <div className="App">
-//         <div className="container" ref={container}></div>
-//       </div>
-//     );
-// }
+import React from "react";
+import { useRef, useEffect } from "react";
+import lottie from "lottie-web";
 
+function FullStackImg() {
+  const container = useRef(null);
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("./AIAnim.json"),
+    });
+  }, []);
+  return (
+    <div className="App">
+      <div className="container" ref={container}></div>
+    </div>
+  );
+}
 
-//for static images
+/*//for static images
 class FullStackImg extends Component {
     render() {
       return (
@@ -32,6 +31,6 @@ class FullStackImg extends Component {
         </div>
       );
     }
-  }
-  
-  export default FullStackImg;
+  }*/
+
+export default FullStackImg;

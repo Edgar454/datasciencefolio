@@ -6,10 +6,13 @@ import { Fade } from "react-reveal";
 import DataScienceImg from "./datascience/DataScienceImg";
 import FullStackImg from "./web/FullStackImg";
 import DesignImg from "./ui/DesignImg";
+import DataEngineerImg from "./dataeng/DataEngImg";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
+  if (props.fileName === "DataEngineerImg")
+    return <DataEngineerImg theme={props.theme} />;
   else if (props.fileName === "FullStackImg")
     return <FullStackImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;

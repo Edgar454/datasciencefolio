@@ -75,26 +75,12 @@ const skills = {
       title: "Data Science & Analysis",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production-ready models for various deep learning and statistical use cases",
-        "⚡ Experience in working with Computer Vision using OpenCV and NLP projects(T5-Transformer & OpenAI)",
-        "⚡ Having good hands-on with Data Cleaning, processing & Analysing using Pandas, Tableau & PowerBI",
-        "⚡ Experience with Text-to-speech encoders/decoders (speech synthesis) & Voice Cloning",
+        "⚡ Conception de modèles scalables et prêts pour la production (statistiques et machine learning)",
+        "⚡ Nettoyage, transformation et analyse de données avec Pandas, NumPy, et Tableau",
+        "⚡ Déploiement de pipelines d'analyse de données de bout en bout",
+        "⚡ Mise en œuvre de techniques d'explicabilité pour interpréter les résultats des modèles (LIME, SHAP, etc.)",
       ],
       softwareSkills: [
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
@@ -125,72 +111,110 @@ const skills = {
             backgroundColor: "transparent",
           },
         },
+        {
+          skillName: "Scikit-Learn",
+          fontAwesomeClassname: "simple-icons:scikitlearn",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
+        },
+      ],
+    },
+    {
+      title: "Data Engineering",
+      fileName: "DataEngineerImg",
+      skills: [
+        "⚡ Conception de pipelines de données scalables et tolérants aux pannes avec Apache Kafka & Spark",
+        "⚡ Maîtrise des bases SQL et des data warehouses (ex : BigQuery)",
+        "⚡ Orchestration de workflows complexes avec Apache Airflow",
+        "⚡ Monitoring des pipelines avec Prometheus & Grafana, et containerisation avec Docker",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Kafka",
+          fontAwesomeClassname: "logos-kafka",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Airflow",
+          fontAwesomeClassname: "logos-airflow",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "SQL",
+          fontAwesomeClassname: "logos-postgresql",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "logos-docker",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Grafana",
+          fontAwesomeClassname: "logos-grafana",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
       ],
     },
     {
       title: "Deep Learning and Computer Vision",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive websites using HTML5, CSS3, BootStrap5, ReactJS & NodeJS",
-        "⚡ Creating application backend in Node, Flask & Streamlit",
-        "⚡ Having experience in Domain & Hosting using Netlify, Vercel, Heroku & Hostinger",
+        "⚡ Développement de modèles deep learning pour la vision par ordinateur : classification, détection, segmentation et analyse vidéo",
+        "⚡ Conception d'agents intelligents (RAG, agentic workflows) et fine-tuning de LLMs pour l'extraction d'information, la génération ou la classification de texte",
+        "⚡ Intégration de modèles IA dans des applications via des APIs Python (FastAPI)",
+        "⚡ Optimisation des performances modèles (taille, vitesse, précision) pour un usage en production",
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "Hugginface",
+          fontAwesomeClassname: "simple-icons:huggingface",
           style: {
-            color: "#E34F26",
+            color: "#FFD21F",
           },
         },
+
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "BootStrap",
-          fontAwesomeClassname: "logos-bootstrap",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          skillName: "YOLO",
+          fontAwesomeClassname: "simple-icons:yolo",
           style: {
             backgroundColor: "#000000",
-            color: "#F7DF1E",
+            color: "#2A2D34",
           },
         },
         {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          skillName: "LLMs",
+          fontAwesomeClassname: "simple-icons:openai",
           style: {
-            color: "#61DAFB",
+            /*color: "#61DAFB",*/
           },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          skillName: "Fast API",
+          fontAwesomeClassname: "simple-icons:fastapi",
           style: {
-            color: "#339933",
+            color: "#009688",
           },
         },
         {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
+          skillName: "Pytorch",
+          fontAwesomeClassname: "simple-icons:pytorch",
           style: {
-            color: "#CB3837",
+            color: "#EE4C2C",
           },
         },
       ],
@@ -199,38 +223,17 @@ const skills = {
       title: "UI Automation",
       fileName: "DesignImg",
       skills: [
-        "⚡ Designing highly attractive user interfaces for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-        "⚡ Applying latest Design principles and experienced in product wireframing",
+        "⚡ Conception d'automatisations UI robustes et tolérantes aux erreurs avec UiPath",
+        "⚡ Intégration fluide avec des services variés (Gmail, PDF, navigateurs web...) pour automatiser des workflows complexes",
+        "⚡ Supervision et gestion à distance des processus via l'Orchestrator UiPath",
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
+          skillName: "Uipath",
+          fontAwesomeClassname: "simple-icons:uipath",
           style: {
             color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Adobe Photoshop",
-          fontAwesomeClassname: "simple-icons:adobephotoshop",
-          style: {
-            color: "#2fa3f7",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
+            backgroundColor: "transparent",
           },
         },
       ],
@@ -250,191 +253,223 @@ const projectsHeader = {
 const projectcards = {
   list: [
     {
-      title: "TEATH",
-      img_path: "project-06.png",
+      title: "Real-Time Personalized Recommendation System",
+      img_path: "project-01.png",
       description:
-        "A WebApp for Extracting Text from Images and applying various thresholding methods with sentiment analysis using TextBlob",
+        "Création d'un système de recommandation personnalisé en temps réel basé sur les interactions des utilisateurs, utilisant des techniques de machine learning et des technologies de streaming.",
       tags: [
         {
-          lang: "python",
-          color: "#004782",
+          lang: "Kafka",
+          color: "#F7A700",
         },
         {
-          lang: "TextBlob",
-          color: "#820032",
+          lang: "Apache Spark",
+          color: "#E25D00",
         },
         {
-          lang: "OpenCV",
-          color: "#00a100",
+          lang: "FastAPI",
+          color: "#009688",
         },
         {
-          lang: "Streamlit",
-          color: "#ff4b4b",
-        },
-        {
-          lang: "Heroku",
-          color: "#3c0095",
+          lang: "Machine Learning",
+          color: "#76B041",
         },
       ],
-      link: "https://teath.herokuapp.com ",
-      code: "https://github.com/rohankokkula/TEATH",
-      linkcolor: "white",
-    },
-
-    {
-      title: "Voice Gender Detection",
-      img_path: "voice.gif",
-      description:
-        "A streamlit webapp which detects user's gender and emotion based on realtime audio input.",
-      tags: [
-        {
-          lang: "ongoing",
-          color: "red",
-        },
-        {
-          lang: "python",
-          color: "#004782",
-        },
-        {
-          lang: "matplotlib",
-          color: "#c47206",
-        },
-        {
-          lang: "tensorflow",
-          color: "#4257f5",
-        },
-        {
-          lang: "Streamlit",
-          color: "#ff4b4b",
-        },
-      ],
-      link: "",
-      code: "",
-      linkcolor: "white",
+      code: "https://github.com/ton_utilisateur/realtime_recommender",
     },
     {
-      title: "NeuralViz",
-      img_path: "neural.gif",
-      description:
-        "A webapp to visualize Neural Networks based on no. of layers and neurons, calculate Loss and understand math behind Back Propagation algo.",
-      tags: [
-        {
-          lang: "python",
-          color: "#004782",
-        },
-        {
-          lang: "numpy",
-          color: "#8700b0",
-        },
-        {
-          lang: "matplotlib",
-          color: "#c47206",
-        },
-        {
-          lang: "Streamlit",
-          color: "#ff4b4b",
-        },
-        {
-          lang: "Heroku",
-          color: "#3c0095",
-        },
-      ],
-      link: "https://neuralviz.herokuapp.com/",
-      code: "https://github.com/rohankokkula/neuralviz",
-      linkcolor: "white",
-    },
-    {
-      title: "Semantic Search APP",
+      title: "Système de gestion de la performance de l'entreprise avec SQL",
       img_path: "project-03.png",
       description:
-        "Demo of OpenAI's GPT-3 model on Semantic search using streamlit.",
+        "Création d'un tableau de bord SQL pour suivre la performance de l'entreprise en analysant les ventes, la performance des employés et les coûts. Utilisation de requêtes SQL avancées pour obtenir des KPIs pertinents.",
       tags: [
         {
-          lang: "ongoing",
-          color: "red",
+          lang: "SQL",
+          color: "#00A9E0",
         },
         {
-          lang: "Streamlit",
-          color: "#ff4b4b",
+          lang: "PostgreSQL",
+          color: "#336791",
+        },
+        {
+          lang: "Data Analysis",
+          color: "#F0A500",
         },
       ],
-      link: "",
-      code: "",
-      linkcolor: "white",
+      code: "https://github.com/ton_utilisateur/business_performance_sql",
     },
     {
-      title: "Youtube Thumbnail Generator & AutoUploader",
+      title:
+        "Automated Model Training Pipeline with MLflow and Data Shift Detection",
       img_path: "project-02.png",
       description:
-        "A python streamlit webapp to automate generating & uploading youtube thumbnails using Youtube v3 API",
+        "Création d'un pipeline d'entraînement de modèle automatisé avec gestion du data shift à l'aide de MLflow, Evidently AI et un modèle de registre.",
       tags: [
         {
-          lang: "internal project",
-          color: "red",
+          lang: "MLflow",
+          color: "#5D87A9",
         },
         {
-          lang: "youtube v3 api",
-          color: "red",
+          lang: "Evidently AI",
+          color: "#F5A623",
+        },
+        {
+          lang: "Data Engineering",
+          color: "#E14F35",
+        },
+        {
+          lang: "MLOps",
+          color: "#5A4F96",
         },
       ],
-      link: "",
-      code: "",
-      linkcolor: "white",
-    },
-
-    {
-      title: "Newsearcher",
-      img_path: "news.gif",
-      description:
-        "Enter your search keyword and get a summary of news weblinks with images without actually opening the links.",
-      tags: [
-        {
-          lang: "python",
-          color: "#004782",
-        },
-        {
-          lang: "newspaper3k",
-          color: "#303030",
-        },
-        {
-          lang: "Streamlit",
-          color: "#ff4b4b",
-        },
-        {
-          lang: "nltk",
-          color: "#051c61",
-        },
-      ],
-      link: "https://newsearcher.herokuapp.com/",
-      code: "https://github.com/rohankokkula/Newsearcher",
-      linkcolor: "white",
+      code: "https://github.com/ton_utilisateur/automated_model_training",
     },
     {
-      title: "ActiWeight",
+      title: "Pamphlet Parser",
       img_path: "acti.gif",
       description:
-        "ActiWeight is an Interactive Visualizer for understanding intuition behind 10 Activation Functions used in Neural Networks.",
+        "Application mobile conçue pour automatiser l’enregistrement de nouveaux adhérents à partir de fiches papier. Grâce à un modèle de Document Understanding, les utilisateurs prennent une photo d’un formulaire, les champs sont extraits automatiquement et peuvent être corrigés avant enregistrement dans la base de données (Supabase). Ce projet a été développé avec React Native pour le front mobile et un backend Python pour le traitement OCR + extraction.",
+      tags: [
+        { lang: "React Native", color: "#61DBFB" },
+        { lang: "Supabase", color: "#3ecf8e" },
+        { lang: "Document Understanding", color: "#ffa600" },
+        { lang: "OCR", color: "#a90f1a" },
+        { lang: "Python", color: "#3776AB" },
+      ],
+      code: "https://github.com/ton-repo/pamphlet-parser",
+    },
+    {
+      title:
+        "Prévision du niveau de NO2 au sol à partir de données géospatiales et temporelles",
+      img_path: "acti.gif",
+      description:
+        "Compétition de prédiction du niveau de NO2 au sol en utilisant des données géospatiales, temporelles et satellitaires. Le modèle a permis de se classer dans le top 10% en optimisant les performances de prévision de ce polluant. Utilisation de Python, scikit-learn, et Plotly pour la visualisation des données.",
+      tags: [
+        { lang: "Python", color: "#4B8BBE" },
+        { lang: "scikit-learn", color: "#F7931E" },
+        { lang: "Plotly", color: "#3E8B8E" },
+        { lang: "Data Science", color: "#FF5733" },
+      ],
+      code: "https://github.com/ton_username/no2-forecasting",
+    },
+    {
+      title: "Batch E-Commerce Data Pipeline",
+      img_path: "acti.gif",
+      description:
+        "Pipeline ETL pour l'analyse des logs d’un site e-commerce. Utilisation d'Airflow et Spark pour extraire, transformer et charger les données dans Azure SQL.",
+      tags: [
+        { lang: "Airflow", color: "#003366" },
+        { lang: "Spark", color: "#e55b36" },
+        { lang: "Azure Data Lake", color: "#0078d4" },
+        { lang: "Power BI", color: "#F2B800" },
+      ],
+      code: "https://github.com/ton_username/ecommerce-data-pipeline",
+    },
+    {
+      title: "Real-Time Product Analytics Pipeline",
+      img_path: "acti.gif",
+      description:
+        "Pipeline d'analyse en temps réel pour suivre les événements utilisateurs sur un site e-commerce. Utilisation de Kafka, Spark Streaming, et PostgreSQL pour traiter les données en continu.",
+      tags: [
+        { lang: "Kafka", color: "#f7a000" },
+        { lang: "Spark", color: "#e55b36" },
+        { lang: "PostgreSQL", color: "#336791" },
+        { lang: "Grafana", color: "#FF6347" },
+      ],
+      code: "https://github.com/ton_username/real-time-analytics-pipeline",
+    },
+    {
+      title: "Qui Parle ?",
+      img_path: "voice.gif",
+      description:
+        "Application de diarisation vocale personnalisée. Identifie les locuteurs, segmente les interventions et affiche une timeline interactive avec transcriptions.",
+      tags: [
+        { lang: "pyannote", color: "#f1a208" },
+        { lang: "Whisper", color: "#06c7c4" },
+        { lang: "FastAPI", color: "#009688" },
+        { lang: "React", color: "#61dafb" },
+        { lang: "PostgreSQL", color: "#336791" },
+      ],
+      code: "https://github.com/ton-projet/qui-parle",
+    },
+    {
+      title: "Data Quality Monitoring avec Alertes",
+      img_path: "acti.gif",
+      description:
+        "Système de surveillance et d'alerte sur la qualité des données avec des tests automatisés, gestion des erreurs et intégration des alertes via Azure Monitor.",
+      tags: [
+        { lang: "Great Expectations", color: "#4078c0" },
+        { lang: "Airflow", color: "#003366" },
+        { lang: "Azure Monitor", color: "#0078d4" },
+        { lang: "Supabase", color: "#3E83B1" },
+      ],
+      code: "https://github.com/ton_username/data-quality-monitoring",
+    },
+    {
+      title: "AI Study Buddy",
+      img_path: "acti.gif",
+      description:
+        "Assistant d’étude avancé, orchestré par une équipe d’agents spécialisés. Il lit automatiquement un cours (PDF), l’explique, le résume, et génère des quiz/QCM exportables (Anki), tout en s’appuyant sur la recherche web. L’architecture inclut FastAPI, CrewAI, Redis pour la file de tâches, PostgreSQL pour la persistance, et Grafana pour le monitoring. Authentification sécurisée (OAuth2/JWT) avec gestion des rôles (user/admin/service).",
+      tags: [
+        { lang: "FastAPI", color: "#009688" },
+        { lang: "CrewAI", color: "#f7e01d" },
+        { lang: "Redis", color: "#dc0000" },
+        { lang: "PostgreSQL", color: "#336791" },
+        { lang: "Grafana", color: "#f46800" },
+        { lang: "OAuth2", color: "#d1462f" },
+        { lang: "LLM", color: "#ffd600" },
+      ],
+      code: "https://github.com/ton-repo/ai-study-buddy",
+    },
+    {
+      title: "Bot de candidature intelligent",
+      img_path: "acti.gif",
+      description:
+        "Automatisation complète du processus de candidature : génération et envoi d'emails personnalisés à partir de fichiers PDF, suivi intelligent des réponses, relances programmées et gestion centralisée via Excel et UiPath Orchestrator.",
       tags: [
         {
-          lang: "python",
+          lang: "UiPath",
           color: "#004782",
         },
         {
-          lang: "matplotlib",
+          lang: "Excel",
           color: "#c47206",
         },
         {
-          lang: "Streamlit",
+          lang: "Orchestrator",
           color: "#ff4b4b",
         },
         {
-          lang: "Heroku",
+          lang: "Gmail",
           color: "#3c0095",
         },
       ],
-      link: "https://www.youtube.com/watch?v=2vk9lQuX_1Q",
       code: "https://github.com/rohankokkula/Actiweight",
-      linkcolor: "white",
+    },
+    {
+      title: "Bot de publication multi-plateformes",
+      img_path: "acti.gif",
+      description:
+        "Automatisation de la publication de contenus sur plusieurs réseaux sociaux depuis un fichier Excel structuré. Le bot se connecte aux plateformes, poste les messages (texte/image), et journalise les activités. Intégration complète avec UiPath, gestion sécurisée des identifiants, et planification via Orchestrator.",
+      tags: [
+        {
+          lang: "UiPath",
+          color: "#004782",
+        },
+        {
+          lang: "Excel",
+          color: "#c47206",
+        },
+        {
+          lang: "Orchestrator",
+          color: "#ff4b4b",
+        },
+        {
+          lang: "Automatisation Web",
+          color: "#007878",
+        },
+      ],
+      code: "https://github.com/ton-repo/multi-poster-bot", // à remplacer par ton lien
     },
   ],
 };
