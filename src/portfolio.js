@@ -253,55 +253,39 @@ const projectsHeader = {
 const projectcards = {
   list: [
     {
-      title: "Real-Time Personalized Recommendation System",
-      img_path: "project-01.png",
+      title:
+        "Analyse du comportement des clients financiers avec SQL et Power BI",
+      img_path: "project-BI.jpg",
       description:
-        "Création d'un système de recommandation personnalisé en temps réel basé sur les interactions des utilisateurs, utilisant des techniques de machine learning et des technologies de streaming.",
-      tags: [
-        {
-          lang: "Kafka",
-          color: "#F7A700",
-        },
-        {
-          lang: "Apache Spark",
-          color: "#E25D00",
-        },
-        {
-          lang: "FastAPI",
-          color: "#009688",
-        },
-        {
-          lang: "Machine Learning",
-          color: "#76B041",
-        },
-      ],
-      code: "https://github.com/ton_utilisateur/realtime_recommender",
-    },
-    {
-      title: "Système de gestion de la performance de l'entreprise avec SQL",
-      img_path: "project-03.png",
-      description:
-        "Création d'un tableau de bord SQL pour suivre la performance de l'entreprise en analysant les ventes, la performance des employés et les coûts. Utilisation de requêtes SQL avancées pour obtenir des KPIs pertinents.",
+        "Création d’un ensemble de vues SQL pour analyser les profils clients, les prêts, les transactions et l’utilisation des cartes dans une banque. Ces vues alimentent un tableau de bord Power BI fournissant des insights exploitables pour la segmentation client, la gestion des risques et le marketing ciblé.",
       tags: [
         {
           lang: "SQL",
           color: "#00A9E0",
         },
         {
-          lang: "PostgreSQL",
-          color: "#336791",
+          lang: "SQL Server",
+          color: "#CC2927",
         },
         {
-          lang: "Data Analysis",
-          color: "#F0A500",
+          lang: "Power BI",
+          color: "#F2C811",
+        },
+        {
+          lang: "Data Modeling",
+          color: "#6A1B9A",
+        },
+        {
+          lang: "Business Intelligence",
+          color: "#00758F",
         },
       ],
-      code: "https://github.com/ton_utilisateur/business_performance_sql",
+      code: "https://github.com/Edgar454/financial-data-analysis-sql-tableau",
     },
     {
       title:
         "Automated Model Training Pipeline with MLflow and Data Shift Detection",
-      img_path: "project-02.png",
+      img_path: "project-monitoring.webp",
       description:
         "Création d'un pipeline d'entraînement de modèle automatisé avec gestion du data shift à l'aide de MLflow, Evidently AI et un modèle de registre.",
       tags: [
@@ -326,7 +310,7 @@ const projectcards = {
     },
     {
       title: "Pamphlet Parser",
-      img_path: "acti.gif",
+      img_path: "project-parser.avif",
       description:
         "Application mobile conçue pour automatiser l’enregistrement de nouveaux adhérents à partir de fiches papier. Grâce à un modèle de Document Understanding, les utilisateurs prennent une photo d’un formulaire, les champs sont extraits automatiquement et peuvent être corrigés avant enregistrement dans la base de données (Supabase). Ce projet a été développé avec React Native pour le front mobile et un backend Python pour le traitement OCR + extraction.",
       tags: [
@@ -336,12 +320,12 @@ const projectcards = {
         { lang: "OCR", color: "#a90f1a" },
         { lang: "Python", color: "#3776AB" },
       ],
-      code: "https://github.com/ton-repo/pamphlet-parser",
+      code: "https://github.com/Edgar454/pamphlet-parser",
     },
     {
       title:
         "Prévision du niveau de NO2 au sol à partir de données géospatiales et temporelles",
-      img_path: "acti.gif",
+      img_path: "project-NO2.jpg",
       description:
         "Compétition de prédiction du niveau de NO2 au sol en utilisant des données géospatiales, temporelles et satellitaires. Le modèle a permis de se classer dans le top 10% en optimisant les performances de prévision de ce polluant. Utilisation de Python, scikit-learn, et Plotly pour la visualisation des données.",
       tags: [
@@ -350,33 +334,7 @@ const projectcards = {
         { lang: "Plotly", color: "#3E8B8E" },
         { lang: "Data Science", color: "#FF5733" },
       ],
-      code: "https://github.com/ton_username/no2-forecasting",
-    },
-    {
-      title: "Batch E-Commerce Data Pipeline",
-      img_path: "acti.gif",
-      description:
-        "Pipeline ETL pour l'analyse des logs d’un site e-commerce. Utilisation d'Airflow et Spark pour extraire, transformer et charger les données dans Azure SQL.",
-      tags: [
-        { lang: "Airflow", color: "#003366" },
-        { lang: "Spark", color: "#e55b36" },
-        { lang: "Azure Data Lake", color: "#0078d4" },
-        { lang: "Power BI", color: "#F2B800" },
-      ],
-      code: "https://github.com/ton_username/ecommerce-data-pipeline",
-    },
-    {
-      title: "Real-Time Product Analytics Pipeline",
-      img_path: "acti.gif",
-      description:
-        "Pipeline d'analyse en temps réel pour suivre les événements utilisateurs sur un site e-commerce. Utilisation de Kafka, Spark Streaming, et PostgreSQL pour traiter les données en continu.",
-      tags: [
-        { lang: "Kafka", color: "#f7a000" },
-        { lang: "Spark", color: "#e55b36" },
-        { lang: "PostgreSQL", color: "#336791" },
-        { lang: "Grafana", color: "#FF6347" },
-      ],
-      code: "https://github.com/ton_username/real-time-analytics-pipeline",
+      code: "https://github.com/Edgar454/GroundLevel_NO2_prediction",
     },
     {
       title: "Qui Parle ?",
@@ -390,24 +348,26 @@ const projectcards = {
         { lang: "React", color: "#61dafb" },
         { lang: "PostgreSQL", color: "#336791" },
       ],
-      code: "https://github.com/ton-projet/qui-parle",
+      code: "https://github.com/Edgar454/WhoIsTalking",
     },
     {
-      title: "Data Quality Monitoring avec Alertes",
-      img_path: "acti.gif",
+      title: "Fitness Health Monitor",
+      img_path: "project-health.jpg",
       description:
-        "Système de surveillance et d'alerte sur la qualité des données avec des tests automatisés, gestion des erreurs et intégration des alertes via Azure Monitor.",
+        "Pipeline de surveillance santé connecté à l’API Google Fit. Données quotidiennes sur le sommeil, l’activité physique et les calories sont extraites via Airflow, validées avec Great Expectations, transformées avec Spark, stockées dans PostgreSQL et visualisées via Grafana avec alertes email personnalisables.",
       tags: [
-        { lang: "Great Expectations", color: "#4078c0" },
-        { lang: "Airflow", color: "#003366" },
-        { lang: "Azure Monitor", color: "#0078d4" },
-        { lang: "Supabase", color: "#3E83B1" },
+        { lang: "Airflow", color: "#1980aa" },
+        { lang: "Spark", color: "#ec7c26" },
+        { lang: "Google Fit API", color: "#34a853" },
+        { lang: "Great Expectations", color: "#7f52ff" },
+        { lang: "PostgreSQL", color: "#336791" },
+        { lang: "Grafana", color: "#f46800" },
       ],
-      code: "https://github.com/ton_username/data-quality-monitoring",
+      code: "https://github.com/Edgar454/Fitness_Health_Monitor_Pipeline",
     },
     {
       title: "AI Study Buddy",
-      img_path: "acti.gif",
+      img_path: "project-buddy.jpg",
       description:
         "Assistant d’étude avancé, orchestré par une équipe d’agents spécialisés. Il lit automatiquement un cours (PDF), l’explique, le résume, et génère des quiz/QCM exportables (Anki), tout en s’appuyant sur la recherche web. L’architecture inclut FastAPI, CrewAI, Redis pour la file de tâches, PostgreSQL pour la persistance, et Grafana pour le monitoring. Authentification sécurisée (OAuth2/JWT) avec gestion des rôles (user/admin/service).",
       tags: [
@@ -419,11 +379,11 @@ const projectcards = {
         { lang: "OAuth2", color: "#d1462f" },
         { lang: "LLM", color: "#ffd600" },
       ],
-      code: "https://github.com/ton-repo/ai-study-buddy",
+      code: "https://github.com/Edgar454/AI_study_Buddy",
     },
     {
       title: "Bot de candidature intelligent",
-      img_path: "acti.gif",
+      img_path: "project-rpa.jpg",
       description:
         "Automatisation complète du processus de candidature : génération et envoi d'emails personnalisés à partir de fichiers PDF, suivi intelligent des réponses, relances programmées et gestion centralisée via Excel et UiPath Orchestrator.",
       tags: [
@@ -444,32 +404,22 @@ const projectcards = {
           color: "#3c0095",
         },
       ],
-      code: "https://github.com/rohankokkula/Actiweight",
+      code: "https://github.com/Edgar454/ApplyingBot",
     },
     {
-      title: "Bot de publication multi-plateformes",
-      img_path: "acti.gif",
+      title: "Insight Africa",
+      img_path: "news.gif",
       description:
-        "Automatisation de la publication de contenus sur plusieurs réseaux sociaux depuis un fichier Excel structuré. Le bot se connecte aux plateformes, poste les messages (texte/image), et journalise les activités. Intégration complète avec UiPath, gestion sécurisée des identifiants, et planification via Orchestrator.",
+        "Plateforme intelligente de veille médiatique dédiée à l’Afrique. Elle collecte, classe, résume et visualise des articles provenant de sources variées. Le système repose sur un pipeline Airflow (scraping, Kafka, Spark), une API FastAPI et une interface interactive React. Résumés hebdomadaires, graphe de connaissances, et modélisation thématique automatisée inclus.",
       tags: [
-        {
-          lang: "UiPath",
-          color: "#004782",
-        },
-        {
-          lang: "Excel",
-          color: "#c47206",
-        },
-        {
-          lang: "Orchestrator",
-          color: "#ff4b4b",
-        },
-        {
-          lang: "Automatisation Web",
-          color: "#007878",
-        },
+        { lang: "Airflow", color: "#1980aa" },
+        { lang: "Apache Spark", color: "#ec7c26" },
+        { lang: "Kafka", color: "#f7a000" },
+        { lang: "FastAPI", color: "#009688" },
+        { lang: "React", color: "#61dafb" },
+        { lang: "PostgreSQL", color: "#336791" },
       ],
-      code: "https://github.com/ton-repo/multi-poster-bot", // à remplacer par ton lien
+      code: "https://github.com/Edgar454/African_News_Analyzer_Pipeline",
     },
   ],
 };
