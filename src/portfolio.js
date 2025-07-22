@@ -496,7 +496,7 @@ const resumeright = {
         {
           title:
             "Enhancing Regulatory Decision-Making through a Retrieval-Augmented Generation (RAG) Based LLM",
-          subtitle: "Omdena.com",
+          subtitle: "",
           content: [
             "J'ai participé à ce challenge dont l'objectif était double :",
             " digitaliser d'anciens documents administratifs pour en assurer la conservation",
@@ -510,7 +510,8 @@ const resumeright = {
         },
         {
           title: "Local News Aggregator and Analyzer for Kitwe, Zambia",
-          subtitle: "pranavphulware.netlify.app",
+          subtitle:
+            "https://www.omdena.com/chapter-challenges/local-news-aggregator-and-analyzer-for-kitwe-zambia",
           content: [
             "J’ai participé à ce projet dont l’objectif était de lutter contre la désinformation dans la province de Kitwe, en Zambie, en proposant une plateforme de vérification de l'information locale.",
             "🔹 Contribution à la modélisation",
@@ -521,7 +522,8 @@ const resumeright = {
         },
         {
           title: "Karimganj Flood Prediction Challenge",
-          subtitle: "pranavphulware.netlify.app",
+          subtitle:
+            "https://www.omdena.com/chapter-challenges/flood-prediction-and-management-in-karimganj-district",
           content: [
             "J’ai participé à ce projet dont l’objectif était d’aider les autorités à anticiper les inondations dans la région de Karimganj, en Inde, afin de pouvoir mettre en place les mesures de prévention plus tôt.",
             "Notre équipe était chargée de développer un modèle de prévision (forecasting) basé sur des données météorologiques, notamment via l’API OpenMeteo, pour prédire les risques d'inondation à court terme.",
@@ -535,7 +537,7 @@ const resumeright = {
         },
         {
           title: "Adaptive AI Tutor for Refugee Education in Jordan (Phase 2)",
-          subtitle: "pranavphulware.netlify.app",
+          subtitle: "",
           content: [
             "Ce projet en cours vise à faciliter l’accès à l’éducation pour les réfugiés en Cisjordanie, qui manquent souvent d’enseignants en raison de la guerre, de la famine et d’autres conditions extrêmes.",
             "L’objectif est de développer un tuteur intelligent basé sur une architecture RAG (Retrieval-Augmented Generation) capable d’accompagner les élèves dans leur apprentissage.",
@@ -544,15 +546,6 @@ const resumeright = {
             ". La dimension culturelle et linguistique, car le tuteur doit interagir en arabe, tout en respectant les sensibilités du public cible.",
             "🎯 Mon rôle actuel :",
             "Je fais partie de l’équipe de modélisation, où je contribue à la conception et à l’adaptation du modèle RAG pour qu’il puisse jouer le rôle de tuteur personnalisé.",
-          ],
-        },
-        {
-          title: "Mobile OCR App for Automated Member Registration",
-          subtitle: "pranavphulware.netlify.app",
-          content: [
-            "J’ai développé une application mobile pour mon église afin de faciliter l’enregistrement des nouveaux adhérents.",
-            "Ce projet visait à remplacer la saisie manuelle des informations par un processus automatisé à partir d’une simple photo.",
-            "Grâce à la reconnaissance optique de caractères (OCR), l’application extrait les données des formulaires papier et les enregistre automatiquement dans la base de données, permettant ainsi de gagner un temps précieux et réduire les erreurs humaines.",
           ],
         },
       ],
