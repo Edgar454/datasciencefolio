@@ -306,7 +306,8 @@ const projectcards = {
           color: "#5A4F96",
         },
       ],
-      code: "https://github.com/ton_utilisateur/automated_model_training",
+      code:
+        "https://github.com/Edgar454/Automated_Model_Training_With_Data_Shift_Detection",
     },
     {
       title: "Pamphlet Parser",
