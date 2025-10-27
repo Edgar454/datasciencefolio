@@ -47,7 +47,7 @@ const competitiveSites = {
       style: {
         color: "#323754",
       },
-      profileLink: "https://www.hackerearth.com/@rohankokkula",
+      profileLink: "https://www.hackerearth.com/@mevaed4/",
     },
     {
       siteName: "LinkedIn",
@@ -430,26 +430,41 @@ const resumeleft = {
     title: ["Experience"],
     data: [
       {
-        title: "Data scientist (stagiaire)",
-        subtitle: "MEDTECH",
-        date: "Mars 2024 - Septembre 2024",
+        title: "Stagiaire Data Engineer / Data Scientist",
+        subtitle: "Lotus Capital",
+        date: "Mar 2025 - Présent",
         content: [
-          "Construction et Optimisation de modèles d’IA pour l’extractiond’informations sur des images de chèques.",
-          "Utilisation de techniques avancées de compression visant à optimiserles ressources consommées par le modèle et la performance de celui-ci.",
-          "Entraînement et optimisation du modèle permettant d’obtenir un modèle deux fois plus rapide et de 10% plus poerformant",
-          "Mise en place d’un framework de monitoring et d’explicabilité pour analyser les résultats du modèle et expliquer les zones influençant les décisions du modèle.",
-          "Documentation complète des processus techniques et des workflows.",
+          "Conception et mise en œuvre de pipelines de données sécurisés, fiables et haute performance pour les soumissions utilisateurs et les données de marché, permettant validation, obfuscation et transformation en temps réel.",
+          "Développement de pipelines interconnectés avec Kafka, Flink, RabbitMQ et microservices containerisés, avec configuration haute disponibilité (Zookeeper HA, backend MinIO) garantissant intégrité des données et disponibilité du cluster.",
+          "Création de systèmes de traitement distribué, incluant un moteur de scoring basé sur Spark, supportant un traitement batch tolérant aux pannes et scalable.",
+          "Mise en place de communications sécurisées et automatisation de la gestion des certificats pour des services encryptés et prêts pour la production.",
+          "Application de schémas de données pour assurer cohérence et faciliter les mises à jour.",
+          "Création de dashboards de supervision avec Prometheus et Grafana pour suivre la santé des microservices, la performance des pipelines et les KPIs.",
+          "Rédaction de tests unitaires et d’intégration avec pytest et GitHub Actions pour valider le fonctionnement, la sécurité, la résilience HA et la cohérence des données.",
+          "Atteinte d’une latence de validation end-to-end inférieure à 200ms, démontrant efficacité et fiabilité dans un environnement à fort volume.",
+          "Collaboration avec les autres modules et contributeurs, appliquant les bonnes pratiques de data engineering, MLOps et fiabilité logicielle.",
         ],
       },
       {
-        title: "Statisticien (stagiaire)",
-        subtitle:
-          "Direction Départementale de l’Agriculture de la Pêche et de l’Elevage duBorgou (DDAEP)",
-        date: "Juin 2021 - Aout 2021",
+        title: "Stagiaire Data Scientist",
+        subtitle: "MEDTECH",
+        date: "Mar 2024 - Sep 2024",
         content: [
-          "Conception du questionnaire d’enquête sur le recensement descultures maraîchères",
-          "Formation des enqueteurs",
-          "Analyse des données de l’enquête et rédaction de rapport",
+          "Construction et optimisation de modèles d’IA pour l’extraction d’informations sur des images de chèques.",
+          "Application de techniques avancées de compression de modèles (LoRA, knowledge distillation, quantization) pour améliorer vitesse et performance.",
+          "Mise en place d’un framework de monitoring et d’explicabilité pour analyser les résultats et identifier les zones influençant les décisions du modèle.",
+          "Documentation complète des processus techniques et workflows pour assurer reproductibilité et partage des connaissances.",
+        ],
+      },
+      {
+        title: "Stagiaire Statisticien",
+        subtitle:
+          "Direction Départementale de l’Agriculture, de la Pêche et de l’Élevage du Borgou (DDAEP)",
+        date: "Jul 2021 - Août 2021",
+        content: [
+          "Conception de questionnaires pour le recensement des cultures maraîchères.",
+          "Formation et supervision des enquêteurs sur le terrain pour garantir la précision des données collectées.",
+          "Analyse des données et rédaction d’un rapport détaillé avec recommandations exploitables.",
         ],
       },
     ],
