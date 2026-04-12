@@ -26,17 +26,14 @@ export default function Greeting(props) {
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("Data Scientist")
-                      .pauseFor(200)
-                      .deleteAll()
                       .typeString("Data Engineer")
-                      .pauseFor(200)
+                      .pauseFor(900)
                       .deleteAll()
-                      .typeString("AI/ML Engineer")
-                      .pauseFor(200)
+                      .typeString("Data Scientist")
+                      .pauseFor(900)
                       .deleteAll()
-                      .typeString("UiPath Developer")
-                      .pauseFor(200)
+                      .typeString("AI & Data Architect")
+                      .pauseFor(900)
                       .start();
                   }}
                   options={{
@@ -50,19 +47,14 @@ export default function Greeting(props) {
                 style={{ color: theme.text }}
               >
                 <div className="entities">
-                  A curious mind at the intersection of AI, automation, and
-                  problem-solving. I’m a{" "}
-                  <mark data-entity="noun">Data Scientist</mark> who{" "}
-                  <mark data-entity="verb">enjoys turning </mark> raw data into
-                  real-world impact — whether that means{" "}
-                  <mark data-entity="skill">teaching models</mark> to understand
-                  documents,{" "}
-                  <mark data-entity="skill">building automation pipelines</mark>{" "}
-                  , or{" "}
-                  <mark data-entity="skill">
-                    making AI systems more explainable and reliable
-                  </mark>
-                  . Always learning, always building!
+                  I design and build{" "}
+                  <mark data-entity="noun">data systems</mark> that turn raw
+                  information into reliable products. As a{" "}
+                  <mark data-entity="noun">Data Engineer</mark> with a
+                  background in <mark data-entity="noun">Data Science</mark>, I
+                  focus on building scalable pipelines, automation workflows,
+                  and <mark data-entity="noun">AI-driven systems</mark> where
+                  data is structured, usable, and production-ready.
                 </div>
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />

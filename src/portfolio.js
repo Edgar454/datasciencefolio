@@ -34,20 +34,21 @@ const competitiveSites = {
       profileLink: "https://github.com/Edgar454",
     },
     {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
+      siteName: "Upwork",
+      iconifyClassname: "simple-icons:upwork",
       style: {
-        color: "#20BEFF",
+        color: "#6FDA44",
       },
-      profileLink: "https://www.kaggle.com/edgarmeva",
+      profileLink:
+        "https://www.upwork.com/freelancers/~0153b24257924da281?mp_source=share",
     },
     {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
+      siteName: "Leetcode",
+      iconifyClassname: "simple-icons:leetcode",
       style: {
-        color: "#323754",
+        color: "#FFA116",
       },
-      profileLink: "https://www.hackerearth.com/@mevaed4/",
+      profileLink: "https://leetcode.com/u/eded124/",
     },
     {
       siteName: "LinkedIn",
@@ -72,78 +73,55 @@ const competitiveSites = {
 const skills = {
   data: [
     {
-      title: "Data Science & Analysis",
-      fileName: "DataScienceImg",
+      title: "Data Engineering & Pipelines",
+      fileName: "DataEngineerImg",
       skills: [
-        "⚡ Conception de modèles scalables et prêts pour la production (statistiques et machine learning)",
-        "⚡ Nettoyage, transformation et analyse de données avec Pandas, NumPy, et Tableau",
-        "⚡ Déploiement de pipelines d'analyse de données de bout en bout",
-        "⚡ Mise en œuvre de techniques d'explicabilité pour interpréter les résultats des modèles (LIME, SHAP, etc.)",
+        "⚡ Design and implementation of scalable data pipelines (batch & streaming)",
+        "⚡ Data modeling and processing using SQL and distributed systems concepts",
+        "⚡ Workflow orchestration and automation of data processes",
+        "⚡ Monitoring and optimization of data pipelines for production reliability",
       ],
       softwareSkills: [
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
+          style: { color: "#3776AB" },
         },
         {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
+          skillName: "SQL",
+          fontAwesomeClassname: "logos-postgresql",
+          style: { color: "#336791" },
         },
         {
-          skillName: "NumPy",
-          fontAwesomeClassname: "logos-numpy",
-          style: {
-            backgroundColor: "transparent",
-          },
+          skillName: "Apache Spark",
+          fontAwesomeClassname: "logos-apache-spark",
+          style: {},
         },
         {
-          skillName: "Tableau",
-          fontAwesomeClassname: "logos-tableau",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Scikit-Learn",
-          fontAwesomeClassname: "simple-icons:scikitlearn",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-      ],
-    },
-    {
-      title: "Data Engineering",
-      fileName: "DataEngineerImg",
-      skills: [
-        "⚡ Conception de pipelines de données scalables et tolérants aux pannes avec Apache Kafka & Spark",
-        "⚡ Maîtrise des bases SQL et des data warehouses (ex : BigQuery)",
-        "⚡ Orchestration de workflows complexes avec Apache Airflow",
-        "⚡ Monitoring des pipelines avec Prometheus & Grafana, et containerisation avec Docker",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Kafka",
+          skillName: "Apache Kafka",
           fontAwesomeClassname: "logos-kafka",
-          style: {
-            backgroundColor: "transparent",
-          },
+          style: {},
         },
         {
           skillName: "Airflow",
           fontAwesomeClassname: "logos-airflow",
-          style: {
-            backgroundColor: "transparent",
-          },
+          style: {},
+        },
+      ],
+    },
+    {
+      title: "Data Systems & Architecture",
+      fileName: "DataArchitectureImg",
+      skills: [
+        "⚡ Design of data-centric architectures for scalable applications",
+        "⚡ Structuring data flows between APIs, services, and storage systems",
+        "⚡ Backend system design focused on scalability and maintainability",
+        "⚡ Integration of data systems into production environments",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Redis",
+          fontAwesomeClassname: "logos-redis",
         },
         {
           skillName: "SQL",
@@ -168,72 +146,50 @@ const skills = {
             backgroundColor: "transparent",
           },
         },
-      ],
-    },
-    {
-      title: "Deep Learning and Computer Vision",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Développement de modèles deep learning pour la vision par ordinateur : classification, détection, segmentation et analyse vidéo",
-        "⚡ Conception d'agents intelligents (RAG, agentic workflows) et fine-tuning de LLMs pour l'extraction d'information, la génération ou la classification de texte",
-        "⚡ Intégration de modèles IA dans des applications via des APIs Python (FastAPI)",
-        "⚡ Optimisation des performances modèles (taille, vitesse, précision) pour un usage en production",
-      ],
-      softwareSkills: [
         {
-          skillName: "Hugginface",
-          fontAwesomeClassname: "simple-icons:huggingface",
+          skillName: "Prometheus",
+          fontAwesomeClassname: "logos-prometheus",
           style: {
-            color: "#FFD21F",
-          },
-        },
-
-        {
-          skillName: "YOLO",
-          fontAwesomeClassname: "simple-icons:yolo",
-          style: {
-            backgroundColor: "#000000",
-            color: "#2A2D34",
-          },
-        },
-        {
-          skillName: "LLMs",
-          fontAwesomeClassname: "simple-icons:openai",
-          style: {
-            /*color: "#61DAFB",*/
-          },
-        },
-        {
-          skillName: "Fast API",
-          fontAwesomeClassname: "simple-icons:fastapi",
-          style: {
-            color: "#009688",
-          },
-        },
-        {
-          skillName: "Pytorch",
-          fontAwesomeClassname: "simple-icons:pytorch",
-          style: {
-            color: "#EE4C2C",
-          },
-        },
-      ],
-    },
-    {
-      title: "UI Automation",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Conception d'automatisations UI robustes et tolérantes aux erreurs avec UiPath",
-        "⚡ Intégration fluide avec des services variés (Gmail, PDF, navigateurs web...) pour automatiser des workflows complexes",
-        "⚡ Supervision et gestion à distance des processus via l'Orchestrator UiPath",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Uipath",
-          fontAwesomeClassname: "simple-icons:uipath",
-          style: {
-            color: "#FF2BC2",
             backgroundColor: "transparent",
+          },
+        },
+      ],
+    },
+    {
+      title: "AI & Applied Systems",
+      fileName: "AIEngImg",
+      skills: [
+        "⚡ Development of LLM-based applications (RAG, agents, workflow automation)",
+        "⚡ Integration of machine learning models into production systems via APIs",
+        "⚡ Design of intelligent automation systems powered by AI",
+        "⚡ Optimization of AI systems for reliability, cost, and performance",
+      ],
+      softwareSkills: [
+        {
+          skillName: "OpenAI / LLMs",
+          fontAwesomeClassname: "simple-icons:openai",
+        },
+        {
+          skillName: "LangChain",
+          fontAwesomeClassname: "simple-icons:langchain",
+          style: { color: "#7FC8FF" },
+        },
+        {
+          skillName: "FastAPI",
+          fontAwesomeClassname: "simple-icons:fastapi",
+          style: { color: "#009688" },
+        },
+        {
+          skillName: "Hugging Face",
+          fontAwesomeClassname: "simple-icons:huggingface",
+          style: { color: "#FFD21F" },
+        },
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "ion-logo-python",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
           },
         },
       ],
@@ -430,41 +386,77 @@ const resumeleft = {
     title: ["Experience"],
     data: [
       {
-        title: "Stagiaire Data Engineer / Data Scientist",
-        subtitle: "Lotus Capital",
-        date: "Mar 2025 - Présent",
+        title: "Founding Platform Engineer",
+        subtitle: "Indiquant",
+        date: "Feb 2026 - Present",
         content: [
-          "Conception et mise en œuvre de pipelines de données sécurisés, fiables et haute performance pour les soumissions utilisateurs et les données de marché, permettant validation, obfuscation et transformation en temps réel.",
-          "Développement de pipelines interconnectés avec Kafka, Flink, RabbitMQ et microservices containerisés, avec configuration haute disponibilité (Zookeeper HA, backend MinIO) garantissant intégrité des données et disponibilité du cluster.",
-          "Création de systèmes de traitement distribué, incluant un moteur de scoring basé sur Spark, supportant un traitement batch tolérant aux pannes et scalable.",
-          "Mise en place de communications sécurisées et automatisation de la gestion des certificats pour des services encryptés et prêts pour la production.",
-          "Application de schémas de données pour assurer cohérence et faciliter les mises à jour.",
-          "Création de dashboards de supervision avec Prometheus et Grafana pour suivre la santé des microservices, la performance des pipelines et les KPIs.",
-          "Rédaction de tests unitaires et d’intégration avec pytest et GitHub Actions pour valider le fonctionnement, la sécurité, la résilience HA et la cohérence des données.",
-          "Atteinte d’une latence de validation end-to-end inférieure à 200ms, démontrant efficacité et fiabilité dans un environnement à fort volume.",
-          "Collaboration avec les autres modules et contributeurs, appliquant les bonnes pratiques de data engineering, MLOps et fiabilité logicielle.",
+          "Founding engineer responsible for designing and building a data platform for financial systems, focusing on high-throughput processing, reliability, and secure service-to-service communication.",
+
+          "Designed and implemented end-to-end data pipelines (ingestion, processing, and asynchronous scraping) handling large volumes of market data with validation, batching, and concurrency control.",
+
+          "Engineered distributed workflows with strong consistency guarantees, implementing idempotent processing, reconciliation logic, and request coalescing to prevent data loss, race conditions, and database overload.",
+
+          "Architected a resilient time-series data model with strict idempotency guarantees, ensuring consistent writes under concurrent workloads and failure scenarios.",
+
+          "Optimized performance using Redis-based caching strategies, reducing database load and improving query response times for time-series data.",
+
+          "Built a full observability stack (Prometheus, Grafana, Loki, PostgreSQL exporters) to monitor pipeline health, system behavior, and production performance.",
+
+          "Developed internal tooling to simplify data infrastructure usage (data access, pipeline configuration, permissions), improving developer productivity and reducing operational errors.",
+
+          "Implemented a zero-trust security model using mTLS and HashiCorp Vault (PKI, automated certificate rotation) for secure service-to-service communication.",
+
+          "Designed and enforced access control policies (RBAC, certificate-based identity, network isolation) to protect critical data resources.",
+
+          "Automated CI/CD workflows using GitHub Actions and Makefiles, enabling reproducible deployments and reliable system evolution.",
         ],
       },
       {
-        title: "Stagiaire Data Scientist",
+        title: "Data Engineer Intern",
+        subtitle: "Lotus Capital",
+        date: "Mar 2025 - Jan 2026",
+        content: [
+          "Designed and implemented secure, high-performance data pipelines for user submissions and market data, enabling real-time validation, obfuscation, and transformation.",
+
+          "Built distributed, event-driven systems using Kafka, Flink, RabbitMQ, and containerized microservices with high-availability configurations.",
+
+          "Developed scalable batch processing pipelines using Spark, supporting fault-tolerant data processing across large datasets.",
+
+          "Implemented data validation and schema enforcement strategies to ensure consistency and reliability across evolving data systems.",
+
+          "Monitored production systems using Prometheus and Grafana, identifying bottlenecks and improving pipeline performance.",
+
+          "Developed unit and integration tests with pytest and GitHub Actions to ensure reliability and correctness of data workflows.",
+
+          "Achieved sub-200ms end-to-end validation latency in a high-throughput environment.",
+
+          "Collaborated on improving data engineering practices, contributing to more robust and maintainable data infrastructure.",
+        ],
+      },
+      {
+        title: "Data Scientist Intern",
         subtitle: "MEDTECH",
         date: "Mar 2024 - Sep 2024",
         content: [
-          "Construction et optimisation de modèles d’IA pour l’extraction d’informations sur des images de chèques.",
-          "Application de techniques avancées de compression de modèles (LoRA, knowledge distillation, quantization) pour améliorer vitesse et performance.",
-          "Mise en place d’un framework de monitoring et d’explicabilité pour analyser les résultats et identifier les zones influençant les décisions du modèle.",
-          "Documentation complète des processus techniques et workflows pour assurer reproductibilité et partage des connaissances.",
+          "Developed AI models for extracting structured information from document images, automating data extraction workflows.",
+
+          "Optimized model performance using quantization, knowledge distillation, and efficient fine-tuning techniques.",
+
+          "Implemented monitoring and explainability tools to analyze model behavior and improve reliability.",
+
+          "Documented end-to-end workflows to ensure reproducibility and facilitate collaboration.",
         ],
       },
       {
-        title: "Stagiaire Statisticien",
-        subtitle:
-          "Direction Départementale de l’Agriculture, de la Pêche et de l’Élevage du Borgou (DDAEP)",
-        date: "Jul 2021 - Août 2021",
+        title: "Statistician Intern",
+        subtitle: "DDAEP (Agriculture, Fisheries and Livestock Department)",
+        date: "Jul 2021 - Aug 2021",
         content: [
-          "Conception de questionnaires pour le recensement des cultures maraîchères.",
-          "Formation et supervision des enquêteurs sur le terrain pour garantir la précision des données collectées.",
-          "Analyse des données et rédaction d’un rapport détaillé avec recommandations exploitables.",
+          "Designed data collection methodologies and survey tools for agricultural data gathering.",
+
+          "Trained and supervised field agents to ensure data quality and consistency.",
+
+          "Analyzed collected data and produced reports with actionable insights for decision-making.",
         ],
       },
     ],
@@ -478,90 +470,85 @@ const resumeright = {
       data: [
         {
           title: "Master en Data Science et Intelligence Artificielle",
-          subtitle: "Université Mundiapolis , Maroc",
+          subtitle: "Université Mundiapolis, Maroc",
           date: "2022 - 2024",
           content: [],
         },
         {
           title: "Licence en Statistiques Appliquées",
           subtitle:
-            "Ecole Nationale de la Statisque de la Planification et de la Démographie (ENSPD) , Benin",
+            "École Nationale de la Statistique de la Planification et de la Démographie (ENSPD), Bénin",
           date: "2019 - 2021",
           content: [],
         },
       ],
     },
+
     {
-      title: ["Ranks and Achivements"],
+      title: ["Machine Learning & Systems Achievements"],
       data: [
         {
-          title: "Ranks",
+          title: "Competitive ML & Applied AI Rankings",
           content: [
-            "#1/20 in Mauritaninan License Plate Detection Challenge (Kaggle)",
-            "#26/333 in GeoAI Ground-level NO2 Estimation Challenge (Zindi)",
-            "#35/258 in Ghana Crop Disease Detection Challenge (Zindi)",
-            "#62/245 in CGIAR Root Volume Estimation Challenge (Zindi)",
-            "#121/444 in IBM SkillsBuild Hydropower Climate Optimisation Challenge (Zindi)",
+            "#1/20 – License Plate Detection Challenge (Kaggle)",
+            "#26/333 – GeoAI NO2 Estimation Challenge (Zindi)",
+            "#35/258 – Crop Disease Detection Challenge (Zindi)",
+            "#62/245 – Root Volume Estimation Challenge (Zindi)",
+            "#121/444 – Climate Optimization Challenge (Zindi)",
           ],
         },
       ],
     },
+
     {
-      title: ["Projets Collaboratifs"],
+      title: ["AI & Data Systems Projects"],
       data: [
         {
+          title: "RAG-based LLM for Regulatory Decision Support Systems",
+          subtitle: "Applied AI / Information Retrieval System",
+          content: [
+            "Designed a document intelligence pipeline combining OCR, preprocessing, and structured ingestion for legacy administrative documents.",
+            "Built an end-to-end RAG system enabling semantic search and retrieval over digitized regulatory archives.",
+            "Implemented automated data processing workflows using GitHub Actions for ingestion and cleaning pipelines.",
+            "Developed an evaluation framework using LLM-as-a-judge to assess retrieval quality and response relevance.",
+            "Focused on system reliability, data quality, and retrieval consistency across heterogeneous document sources.",
+          ],
+        },
+
+        {
           title:
-            "Enhancing Regulatory Decision-Making through a Retrieval-Augmented Generation (RAG) Based LLM",
-          subtitle: "",
+            "Local News Aggregation & Fake News Detection System – Kitwe, Zambia",
+          subtitle: "ML System for Misinformation Detection",
           content: [
-            "J'ai participé à ce challenge dont l'objectif était double :",
-            " digitaliser d'anciens documents administratifs pour en assurer la conservation",
-            " faciliter leur consultation via un assistant de recherche basé sur une architecture RAG (Retrieval-Augmented Generation).",
-            "J'ai contribué dans deux équipes clés :",
-            "🔹 Prétraitement des données",
-            "J'ai participé à l'extraction du texte via OCR, à son nettoyage (suppression des éléments peu pertinents comme les en-têtes et pieds de page) et à la mise en place d’un pipeline automatisé d'acquisition et de traitement des documents via GitHub Actions.",
-            "🔹 Évaluation des performances",
-            "J’ai développé un pipeline d’évaluation des réponses de notre assistant en utilisant le paradigme 'LLM as a judge', permettant de mesurer la pertinence et la justesse des résultats générés.",
+            "Designed a full text classification pipeline for real-time fake news detection using TF-IDF and logistic regression.",
+            "Built data ingestion workflows using RSS feeds for continuous news collection and preprocessing.",
+            "Achieved ~90% accuracy and F1-score under class imbalance constraints.",
+            "Explored advanced techniques such as focal loss for handling skewed datasets.",
+            "System designed with focus on scalability of data ingestion and model inference pipeline.",
           ],
         },
+
         {
-          title: "Local News Aggregator and Analyzer for Kitwe, Zambia",
-          subtitle:
-            "https://www.omdena.com/chapter-challenges/local-news-aggregator-and-analyzer-for-kitwe-zambia",
+          title: "Flood Prediction & Early Warning System – Karimganj, India",
+          subtitle: "ML Forecasting + Deployment System",
           content: [
-            "J’ai participé à ce projet dont l’objectif était de lutter contre la désinformation dans la province de Kitwe, en Zambie, en proposant une plateforme de vérification de l'information locale.",
-            "🔹 Contribution à la modélisation",
-            "J’ai intégré l’équipe de modélisation où j’ai entraîné un modèle de détection de fake news en temps réel, basé sur une approche TF-IDF + régression logistique, atteignant 90 % de précision avec un F1-score équivalent.",
-            "🔹 Apprentissages clés",
-            "Bien que mon modèle n’ait pas été retenu pour la version finale, ce travail m’a permis de découvrir des techniques avancées comme la focal loss pour gérer les déséquilibres de classes. J’ai également appris à utiliser les flux RSS pour collecter automatiquement des données textuelles en ligne.",
+            "Built a forecasting pipeline using meteorological data (OpenMeteo API) to predict flood risk levels.",
+            "Led the deployment team and integrated ML models into a Streamlit-based application.",
+            "Designed end-to-end system connecting data ingestion, preprocessing, prediction, and UI layer.",
+            "Worked on system integration between APIs, model outputs, and real-time visualization components.",
+            "Focused on productionization of ML models and cross-component system reliability.",
           ],
         },
+
         {
-          title: "Karimganj Flood Prediction Challenge",
-          subtitle:
-            "https://www.omdena.com/chapter-challenges/flood-prediction-and-management-in-karimganj-district",
+          title:
+            "Adaptive AI Tutor for Refugee Education (RAG System – Phase 2)",
+          subtitle: "LLM-based Educational System",
           content: [
-            "J’ai participé à ce projet dont l’objectif était d’aider les autorités à anticiper les inondations dans la région de Karimganj, en Inde, afin de pouvoir mettre en place les mesures de prévention plus tôt.",
-            "Notre équipe était chargée de développer un modèle de prévision (forecasting) basé sur des données météorologiques, notamment via l’API OpenMeteo, pour prédire les risques d'inondation à court terme.",
-            "🔹 Rôle : Leader de l’équipe déploiement",
-            "En tant que responsable de l’équipe de déploiement, j’ai :",
-            "Construit l’interface finale de l’application avec Streamlit,",
-            "Géré l'intégration des modèles de prédiction avec les pipelines de prétraitement,",
-            "Assuré la communication entre les différentes API et composants du système.",
-            "Ce projet m’a permis de développer des compétences transversales en déploiement de modèles ML, gestion d’équipe technique, et conception d’interfaces utilisateurs simples et efficaces.",
-          ],
-        },
-        {
-          title: "Adaptive AI Tutor for Refugee Education in Jordan (Phase 2)",
-          subtitle: "",
-          content: [
-            "Ce projet en cours vise à faciliter l’accès à l’éducation pour les réfugiés en Cisjordanie, qui manquent souvent d’enseignants en raison de la guerre, de la famine et d’autres conditions extrêmes.",
-            "L’objectif est de développer un tuteur intelligent basé sur une architecture RAG (Retrieval-Augmented Generation) capable d’accompagner les élèves dans leur apprentissage.",
-            "Les principaux défis résident dans :",
-            ". La portée éducative, avec un modèle devant fournir des explications claires, structurées et illustrées,",
-            ". La dimension culturelle et linguistique, car le tuteur doit interagir en arabe, tout en respectant les sensibilités du public cible.",
-            "🎯 Mon rôle actuel :",
-            "Je fais partie de l’équipe de modélisation, où je contribue à la conception et à l’adaptation du modèle RAG pour qu’il puisse jouer le rôle de tuteur personnalisé.",
+            "Contributing to the design of an adaptive RAG-based tutoring system for personalized learning.",
+            "Working on multilingual and culturally-aware response generation (Arabic-focused educational context)",
+            "Designing retrieval and context augmentation strategies for educational content delivery.",
+            "Focusing on system robustness under low-resource and high-noise data constraints.",
           ],
         },
       ],
@@ -573,46 +560,12 @@ const resumeright = {
 const certifications = {
   certifications: [
     {
-      title: "Multi AI Agent Systems with crewAI",
-      subtitle: "CrewAI",
-      logo_path: "crew_ai_logo.png",
+      title: "Machine Learning Specialization",
+      subtitle: "Coursera",
+      logo_path: "coursera-01.png",
       certificate_link:
-        "https://www.credly.com/badges/2d43f401-7be0-407d-9a77-7477dda8cade/linked_in_profile",
-      alt_name: "CrewAI",
-      color_code: "#000000",
-    },
-    {
-      title: "Introduction to Containers, Kubernetes, and OpenShift V2",
-      subtitle: "IBM",
-      logo_path: "IBM_logo.svg.png",
-      certificate_link:
-        "https://courses.cognitiveclass.ai/certificates/b2aee972c9d142f197c9e1de427a077d",
-      alt_name: "IBM",
-      color_code: "#000000",
-    },
-    {
-      title: "RPA Developer Foundation (v2021.10)",
-      subtitle: "UiPath",
-      logo_path: "LOGO-UIPATH-850.png",
-      certificate_link: "https://www.hackerrank.com/rohankokkula",
-      alt_name: "UiPath",
-      color_code: "#000000",
-    },
-    {
-      title: "Deep Reinforcement Learning Course",
-      subtitle: "HuggingFace",
-      logo_path: "hf-logo.png",
-      certificate_link: "https://www.hackerrank.com/rohankokkula",
-      alt_name: "HugingFace",
-      color_code: "#000000",
-    },
-    {
-      title: "Machine Learning Explainability",
-      subtitle: "Kaggle",
-      logo_path: "Kaggle_logo.webp",
-      certificate_link:
-        "https://www.kaggle.com/learn/certification/edgarmeva/machine-learning-explainability",
-      alt_name: "IITG",
+        "https://coursera.org/share/559e7fb792f1d73d619d116f4ce8bcb4",
+      alt_name: "Coursera",
       color_code: "#000000",
     },
     {
@@ -634,12 +587,12 @@ const certifications = {
       color_code: "#000000",
     },
     {
-      title: "Data Science Ethics",
-      subtitle: "University of Michigan",
-      logo_path: "coursera-01.png",
+      title: "Machine Learning Explainability",
+      subtitle: "Kaggle",
+      logo_path: "Kaggle_logo.webp",
       certificate_link:
-        "https://coursera.org/share/b1dc49cc10bd579b6664e10c9a49eb8f",
-      alt_name: "University of Michigan",
+        "https://www.kaggle.com/learn/certification/edgarmeva/machine-learning-explainability",
+      alt_name: "IITG",
       color_code: "#000000",
     },
     {
@@ -652,29 +605,59 @@ const certifications = {
       color_code: "#000000",
     },
     {
+      title: "dbt Fundamentals",
+      subtitle: "dbt",
+      logo_path: "datacamp-01.png",
+      certificate_link:
+        "https://www.datacamp.com/completed/statement-of-accomplishment/track/8228066771add5079dc03f3e3d385b2905f67ad3",
+      color_code: "#000000",
+    },
+    {
+      title: "Advanced SQL",
+      subtitle: "SQL / Data Systems",
+      logo_path: "hackerbank_logo_new.png",
+      certificate_link:
+        "https://www.hackerrank.com/certificates/iframe/e96f47d33ba1",
+      color_code: "#000000",
+    },
+    {
+      title: "Data Warehousing Concepts",
+      subtitle: "Data Systems",
+      logo_path: "datacamp-01.png",
+      certificate_link:
+        "https://www.datacamp.com/completed/statement-of-accomplishment/course/3e7fe5caffac4071ac1c8a194c435079a7a7718e",
+      color_code: "#000000",
+    },
+    {
+      title: "Introduction to Containers, Kubernetes, and OpenShift V2",
+      subtitle: "IBM",
+      logo_path: "IBM_logo.svg.png",
+      certificate_link:
+        "https://courses.cognitiveclass.ai/certificates/b2aee972c9d142f197c9e1de427a077d",
+      alt_name: "IBM",
+      color_code: "#000000",
+    },
+    {
+      title: "Multi AI Agent Systems with CrewAI",
+      subtitle: "CrewAI",
+      logo_path: "crew_ai_logo.png",
+      color_code: "#000000",
+    },
+    {
+      title: "Data Science Ethics",
+      subtitle: "University of Michigan",
+      logo_path: "coursera-01.png",
+      certificate_link:
+        "https://coursera.org/share/b1dc49cc10bd579b6664e10c9a49eb8f",
+      alt_name: "University of Michigan",
+      color_code: "#000000",
+    },
+    {
       title: "Structurer des projets d’apprentissage automatique",
       subtitle: "Coursera",
       logo_path: "coursera-01.png",
       certificate_link:
         "https://coursera.org/share/bcd75d6240d46879adcf74fbe5bc3e3f",
-      alt_name: "Coursera",
-      color_code: "#000000",
-    },
-    {
-      title: "Machine Learning Specialization",
-      subtitle: "Coursera",
-      logo_path: "coursera-01.png",
-      certificate_link:
-        "https://coursera.org/share/559e7fb792f1d73d619d116f4ce8bcb4",
-      alt_name: "Coursera",
-      color_code: "#000000",
-    },
-    {
-      title: "Generative Adversarial Networks (GANs) Specialization",
-      subtitle: "Coursera",
-      logo_path: "coursera-01.png",
-      certificate_link:
-        "https://coursera.org/share/1e40c7adb8779c7b1372e2c802a24b5a",
       alt_name: "Coursera",
       color_code: "#000000",
     },
@@ -702,15 +685,6 @@ const certifications = {
       logo_path: "coursera-01.png",
       certificate_link:
         "https://coursera.org/share/197f762eae90fc4c1c56edec6d9009da",
-      alt_name: "Coursera",
-      color_code: "#000000",
-    },
-    {
-      title: "Blockchain Basics",
-      subtitle: "Coursera",
-      logo_path: "coursera-01.png",
-      certificate_link:
-        "https://coursera.org/share/1f42afcb003dfb17f85ac80b7a3489b3",
       alt_name: "Coursera",
       color_code: "#000000",
     },

@@ -7,14 +7,20 @@ import DataScienceImg from "./datascience/DataScienceImg";
 import FullStackImg from "./web/FullStackImg";
 import DesignImg from "./ui/DesignImg";
 import DataEngineerImg from "./dataeng/DataEngImg";
+import AiEngImg from "./ai_engineering/AIEngImg";
+import DataArchitectureImg from "./data_architecture/DataArchitectureImg";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
-  if (props.fileName === "DataEngineerImg")
+  else if (props.fileName === "DataEngineerImg")
     return <DataEngineerImg theme={props.theme} />;
   else if (props.fileName === "FullStackImg")
     return <FullStackImg theme={props.theme} />;
+  else if (props.fileName === "AIEngImg")
+    return <AiEngImg theme={props.theme} />;
+  else if (props.fileName === "DataArchitectureImg")
+    return <DataArchitectureImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;
 }
 
