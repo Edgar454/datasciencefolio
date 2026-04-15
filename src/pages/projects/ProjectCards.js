@@ -1,27 +1,50 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
 
-function ProjectCards(props) {
+function ProjectCards({ project, onClick }) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+    <Card
+      className="project-card-view"
+      onClick={() => onClick(project)}
+      style={{ cursor: "pointer" }}
+    >
+      <Card.Img variant="top" src={project.imgPath} alt={project.title} />
+
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title>{project.title}</Card.Title>
+
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {project.description}
         </Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button>
-        <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button>
+
+        {/* optional quick links (still useful UX-wise) */}
+        <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <BiLinkExternal /> Demo
+            </a>
+          )}
+
+          {project.code && (
+            <a
+              href={project.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              GitHub
+            </a>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

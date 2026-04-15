@@ -204,183 +204,6 @@ const projectsHeader = {
     "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
 };
 
-//project cards
-// colors:[primary,secondary,success,danger,warning,info,light,dark,]
-const projectcards = {
-  list: [
-    {
-      title:
-        "Analyse du comportement des clients financiers avec SQL et Power BI",
-      img_path: "project-BI.jpg",
-      description:
-        "Création d’un ensemble de vues SQL pour analyser les profils clients, les prêts, les transactions et l’utilisation des cartes dans une banque. Ces vues alimentent un tableau de bord Power BI fournissant des insights exploitables pour la segmentation client, la gestion des risques et le marketing ciblé.",
-      tags: [
-        {
-          lang: "SQL",
-          color: "#00A9E0",
-        },
-        {
-          lang: "SQL Server",
-          color: "#CC2927",
-        },
-        {
-          lang: "Power BI",
-          color: "#F2C811",
-        },
-        {
-          lang: "Data Modeling",
-          color: "#6A1B9A",
-        },
-        {
-          lang: "Business Intelligence",
-          color: "#00758F",
-        },
-      ],
-      code: "https://github.com/Edgar454/financial-data-analysis-sql-tableau",
-    },
-    {
-      title:
-        "Automated Model Training Pipeline with MLflow and Data Shift Detection",
-      img_path: "project-monitoring.webp",
-      description:
-        "Création d'un pipeline d'entraînement de modèle automatisé avec gestion du data shift à l'aide de MLflow, Evidently AI et un modèle de registre.",
-      tags: [
-        {
-          lang: "MLflow",
-          color: "#5D87A9",
-        },
-        {
-          lang: "Evidently AI",
-          color: "#F5A623",
-        },
-        {
-          lang: "Data Engineering",
-          color: "#E14F35",
-        },
-        {
-          lang: "MLOps",
-          color: "#5A4F96",
-        },
-      ],
-      code:
-        "https://github.com/Edgar454/Automated_Model_Training_With_Data_Shift_Detection",
-    },
-    {
-      title: "Pamphlet Parser",
-      img_path: "project-parser.avif",
-      description:
-        "Application mobile conçue pour automatiser l’enregistrement de nouveaux adhérents à partir de fiches papier. Grâce à un modèle de Document Understanding, les utilisateurs prennent une photo d’un formulaire, les champs sont extraits automatiquement et peuvent être corrigés avant enregistrement dans la base de données (Supabase). Ce projet a été développé avec React Native pour le front mobile et un backend Python pour le traitement OCR + extraction.",
-      tags: [
-        { lang: "React Native", color: "#61DBFB" },
-        { lang: "Supabase", color: "#3ecf8e" },
-        { lang: "Document Understanding", color: "#ffa600" },
-        { lang: "OCR", color: "#a90f1a" },
-        { lang: "Python", color: "#3776AB" },
-      ],
-      code: "https://github.com/Edgar454/pamphlet-parser",
-    },
-    {
-      title:
-        "Prévision du niveau de NO2 au sol à partir de données géospatiales et temporelles",
-      img_path: "project-NO2.jpg",
-      description:
-        "Compétition de prédiction du niveau de NO2 au sol en utilisant des données géospatiales, temporelles et satellitaires. Le modèle a permis de se classer dans le top 10% en optimisant les performances de prévision de ce polluant. Utilisation de Python, scikit-learn, et Plotly pour la visualisation des données.",
-      tags: [
-        { lang: "Python", color: "#4B8BBE" },
-        { lang: "scikit-learn", color: "#F7931E" },
-        { lang: "Plotly", color: "#3E8B8E" },
-        { lang: "Data Science", color: "#FF5733" },
-      ],
-      code: "https://github.com/Edgar454/GroundLevel_NO2_prediction",
-    },
-    {
-      title: "Qui Parle ?",
-      img_path: "voice.gif",
-      description:
-        "Application de diarisation vocale personnalisée. Identifie les locuteurs, segmente les interventions et affiche une timeline interactive avec transcriptions.",
-      tags: [
-        { lang: "pyannote", color: "#f1a208" },
-        { lang: "Whisper", color: "#06c7c4" },
-        { lang: "FastAPI", color: "#009688" },
-        { lang: "React", color: "#61dafb" },
-        { lang: "PostgreSQL", color: "#336791" },
-      ],
-      code: "https://github.com/Edgar454/WhoIsTalking",
-    },
-    {
-      title: "Fitness Health Monitor",
-      img_path: "project-health.jpg",
-      description:
-        "Pipeline de surveillance santé connecté à l’API Google Fit. Données quotidiennes sur le sommeil, l’activité physique et les calories sont extraites via Airflow, validées avec Great Expectations, transformées avec Spark, stockées dans PostgreSQL et visualisées via Grafana avec alertes email personnalisables.",
-      tags: [
-        { lang: "Airflow", color: "#1980aa" },
-        { lang: "Spark", color: "#ec7c26" },
-        { lang: "Google Fit API", color: "#34a853" },
-        { lang: "Great Expectations", color: "#7f52ff" },
-        { lang: "PostgreSQL", color: "#336791" },
-        { lang: "Grafana", color: "#f46800" },
-      ],
-      code: "https://github.com/Edgar454/Fitness_Health_Monitor_Pipeline",
-    },
-    {
-      title: "AI Study Buddy",
-      img_path: "project-buddy.jpg",
-      description:
-        "Assistant d’étude avancé, orchestré par une équipe d’agents spécialisés. Il lit automatiquement un cours (PDF), l’explique, le résume, et génère des quiz/QCM exportables (Anki), tout en s’appuyant sur la recherche web. L’architecture inclut FastAPI, CrewAI, Redis pour la file de tâches, PostgreSQL pour la persistance, et Grafana pour le monitoring. Authentification sécurisée (OAuth2/JWT) avec gestion des rôles (user/admin/service).",
-      tags: [
-        { lang: "FastAPI", color: "#009688" },
-        { lang: "CrewAI", color: "#f7e01d" },
-        { lang: "Redis", color: "#dc0000" },
-        { lang: "PostgreSQL", color: "#336791" },
-        { lang: "Grafana", color: "#f46800" },
-        { lang: "OAuth2", color: "#d1462f" },
-        { lang: "LLM", color: "#ffd600" },
-      ],
-      code: "https://github.com/Edgar454/AI_study_Buddy",
-    },
-    {
-      title: "Bot de candidature intelligent",
-      img_path: "project-rpa.jpg",
-      description:
-        "Automatisation complète du processus de candidature : génération et envoi d'emails personnalisés à partir de fichiers PDF, suivi intelligent des réponses, relances programmées et gestion centralisée via Excel et UiPath Orchestrator.",
-      tags: [
-        {
-          lang: "UiPath",
-          color: "#004782",
-        },
-        {
-          lang: "Excel",
-          color: "#c47206",
-        },
-        {
-          lang: "Orchestrator",
-          color: "#ff4b4b",
-        },
-        {
-          lang: "Gmail",
-          color: "#3c0095",
-        },
-      ],
-      code: "https://github.com/Edgar454/ApplyingBot",
-    },
-    {
-      title: "Insight Africa",
-      img_path: "news.gif",
-      description:
-        "Plateforme intelligente de veille médiatique dédiée à l’Afrique. Elle collecte, classe, résume et visualise des articles provenant de sources variées. Le système repose sur un pipeline Airflow (scraping, Kafka, Spark), une API FastAPI et une interface interactive React. Résumés hebdomadaires, graphe de connaissances, et modélisation thématique automatisée inclus.",
-      tags: [
-        { lang: "Airflow", color: "#1980aa" },
-        { lang: "Apache Spark", color: "#ec7c26" },
-        { lang: "Kafka", color: "#f7a000" },
-        { lang: "FastAPI", color: "#009688" },
-        { lang: "React", color: "#61dafb" },
-        { lang: "PostgreSQL", color: "#336791" },
-      ],
-      code: "https://github.com/Edgar454/African_News_Analyzer_Pipeline",
-    },
-  ],
-};
-
 const resumeleft = {
   left: {
     title: ["Experience"],
@@ -414,7 +237,7 @@ const resumeleft = {
       {
         title: "Data Engineer Intern",
         subtitle: "Lotus Capital",
-        date: "Mar 2025 - Jan 2026",
+        date: "Aug 2025 - Jan 2026",
         content: [
           "Designed and implemented secure, high-performance data pipelines for user submissions and market data, enabling real-time validation, obfuscation, and transformation.",
 
@@ -485,7 +308,7 @@ const resumeright = {
     },
 
     {
-      title: ["Machine Learning & Systems Achievements"],
+      title: ["Achievements"],
       data: [
         {
           title: "Competitive ML & Applied AI Rankings",
@@ -501,10 +324,13 @@ const resumeright = {
     },
 
     {
-      title: ["AI & Data Systems Projects"],
+      title: ["Collaborative AI Projects"],
+      description:
+        "Projects developed in international AI collaborations (Omdena), involving cross-functional teams working on real-world datasets and problems.",
       data: [
         {
           title: "RAG-based LLM for Regulatory Decision Support Systems",
+          link: "https://confirm.omdena.com/LCoszlm",
           subtitle: "Applied AI / Information Retrieval System",
           content: [
             "Designed a document intelligence pipeline combining OCR, preprocessing, and structured ingestion for legacy administrative documents.",
@@ -518,6 +344,7 @@ const resumeright = {
         {
           title:
             "Local News Aggregation & Fake News Detection System – Kitwe, Zambia",
+          link: "https://confirm.omdena.com/LCeujql",
           subtitle: "ML System for Misinformation Detection",
           content: [
             "Designed a full text classification pipeline for real-time fake news detection using TF-IDF and logistic regression.",
@@ -537,18 +364,6 @@ const resumeright = {
             "Designed end-to-end system connecting data ingestion, preprocessing, prediction, and UI layer.",
             "Worked on system integration between APIs, model outputs, and real-time visualization components.",
             "Focused on productionization of ML models and cross-component system reliability.",
-          ],
-        },
-
-        {
-          title:
-            "Adaptive AI Tutor for Refugee Education (RAG System – Phase 2)",
-          subtitle: "LLM-based Educational System",
-          content: [
-            "Contributing to the design of an adaptive RAG-based tutoring system for personalized learning.",
-            "Working on multilingual and culturally-aware response generation (Arabic-focused educational context)",
-            "Designing retrieval and context augmentation strategies for educational content delivery.",
-            "Focusing on system robustness under low-resource and high-noise data constraints.",
           ],
         },
       ],
@@ -741,7 +556,6 @@ export {
   competitiveSites,
   projectsHeader,
   contactPageData,
-  projectcards,
   certifications,
   resumeleft,
   resumeright,

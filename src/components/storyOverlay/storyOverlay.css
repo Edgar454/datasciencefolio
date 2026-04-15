@@ -1,0 +1,195 @@
+.overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay-content {
+  width: 85%;
+  max-width: 950px;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: #111;
+  color: white;
+
+  border-radius: 14px;
+  position: relative;
+
+  padding: 0;
+  text-align: left;
+
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #555 #111;
+}
+
+/* IMAGE */
+.overlay-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* HEADER */
+.overlay-header {
+  padding: 1.5rem;
+}
+
+.overlay-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.overlay-header h2 {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  color: #b5b5b5;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+}
+
+/* META */
+.overlay-meta {
+  margin-top: 6px; /* 👈 closer to subtitle */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.meta-author {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.meta-date {
+  color: #666;
+}
+
+.meta-separator {
+  color: #444;
+}
+
+/* SECTIONS */
+.overlay-sections {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.section h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem; /* bigger */
+  font-weight: 600;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-left: none; /* optional: cleaner modern look */
+  padding-left: 0;
+}
+
+.section h3::before {
+  content: "";
+  width: 14px;
+  height: 3px;
+  background: var(--accent, #ffa500);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.section p {
+  margin: 0;
+  color: #d0d0d0;
+  line-height: 1.75;
+  font-size: 0.98rem;
+}
+
+/* highlight insights */
+.section.highlight {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* TAGS */
+.overlay-tags {
+  margin-top: 2rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+/* label */
+.tags-header {
+  font-weight: 600;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+
+  line-height: 1;
+}
+
+/* tag row */
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  align-items: center; /* ensures baseline alignment */
+}
+/* individual tags */
+.overlay-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+/* CLOSE */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* SCROLLBAR */
+.overlay-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overlay-content::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 10px;
+}
+
+.overlay-content::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.overlay-content::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}

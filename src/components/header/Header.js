@@ -72,6 +72,18 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
+                  to="/system-stories"
+                  tag={Link}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.blue)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                >
+                  System Stories
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/contact"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}

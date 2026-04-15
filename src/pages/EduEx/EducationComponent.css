@@ -69,8 +69,6 @@
   }
 }
 
-
-
 /* --------- */
 .resume-section {
   position: relative !important;
@@ -84,17 +82,16 @@
   padding-bottom: 50px;
 }
 
-
-.date{
-  font-size: .9em;
-  padding-left: .5em;
+.date {
+  font-size: 0.9em;
+  padding-left: 0.5em;
 }
 
 .resume-subtitle {
   font-size: 1em;
   font-weight: 700;
   margin: 0;
-} 
+}
 .resume-right {
   padding-left: 80px !important;
 }
@@ -117,6 +114,12 @@
   text-align: center;
 }
 
+.resume .resume-description {
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
@@ -131,11 +134,22 @@
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
-  color:black;
+  color: black;
   margin-bottom: 10px;
   margin-top: -2px;
 }
 
+.resume .resume-item .resume-title a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.resume .resume-item .resume-title a:hover {
+  border-color: black;
+  cursor: pointer;
+}
 
 .resume .resume-item ul {
   padding-left: 20px;

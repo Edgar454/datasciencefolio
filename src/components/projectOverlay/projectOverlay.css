@@ -1,0 +1,167 @@
+.project-overlay-backdrop {
+  position: fixed !important; /* 👈 FORCE IT */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999; /* 👈 VERY IMPORTANT */
+}
+
+.project-overlay-content {
+  position: relative;
+  width: 95%;
+  max-width: 1000px;
+  max-height: 90vh;
+
+  background: #111;
+  color: white;
+
+  border-radius: 14px;
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(160, 160, 160, 0.5) transparent;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.overlay-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* BODY */
+.overlay-body {
+  padding: 1.5rem;
+  text-align: left !important;
+}
+
+.overlay-body h1 {
+  font-family: "Google Sans Bold";
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.overlay-body h3 {
+  margin-bottom: 4px;
+}
+
+.overlay-body p,
+ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.overlay-description {
+  font-family: "Montserrat";
+  margin-top: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+/* Subtitle */
+.overlay-subtitle {
+  font-weight: 400;
+  color: #ffa500 !important;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.overlay-subtitle::after {
+  content: "";
+  display: block;
+  width: 90px; /* 👈 longer */
+  height: 3px; /* 👈 thicker */
+  margin-top: 10px;
+  background: #ffa500; /* 👈 more visible */
+  border-radius: 3px;
+}
+
+/* DEMO */
+.overlay-demo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* each image */
+.overlay-demo img {
+  width: 100%;
+  height: 200px; /* 👈 fixed height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* TAGS */
+.overlay-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.overlay-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* LINKS */
+.overlay-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 20px;
+}
+
+.overlay-links a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.overlay-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SCROLLBAR (Chrome / Edge / Safari) ===== */
+
+.project-overlay-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-overlay-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.project-overlay-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.project-overlay-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}

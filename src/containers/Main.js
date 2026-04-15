@@ -5,6 +5,7 @@ import Splash from "../pages/splash/Splash";
 import Education from "../pages/EduEx/EducationComponent";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import SystemStoryPage from "../pages/system_stories/SystemStoryPage";
 import { settings } from "../portfolio.js";
 import { createBrowserHistory } from "history";
 
@@ -55,6 +56,12 @@ export default class Main extends Component {
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/system-stories"
+                render={(props) => (
+                  <SystemStoryPage {...props} theme={this.props.theme} />
                 )}
               />
             </Switch>

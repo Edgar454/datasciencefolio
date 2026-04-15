@@ -36,10 +36,17 @@ export default function Resume() {
                   return (
                     <>
                       <h3 className="resume-title">{head.title}</h3>
+                      <p
+                        className={head.description ? "resume-description" : ""}
+                      >
+                        {head.description}
+                      </p>
+
                       {head.data.map((info) => {
                         return (
                           <Resumecontent
                             title={info.title}
+                            link={info.link}
                             subtitle={info.subtitle}
                             date={info.date}
                             content={info.content}
