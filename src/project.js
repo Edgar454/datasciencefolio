@@ -89,7 +89,7 @@ const projects = {
 
       // 👉 Demo
       demo: [
-        "https://github.com/user-attachments/assets/37a317c8-4069-4623-9960-155fce85c34",
+        "https://github.com/Edgar454/WhoIsTalking/blob/main/demo/WhoisTalking.png?raw=true",
       ],
 
       // 👉 Links
@@ -188,6 +188,7 @@ const projects = {
 
       demo: [
         "https://github.com/Edgar454/Fitness_Health_Monitor_Pipeline/blob/main/Graphics.PNG?raw=true",
+        "https://github.com/Edgar454/Fitness_Health_Monitor_Pipeline/blob/main/FitnessMonitor.png?raw=true",
       ],
 
       code: "https://github.com/Edgar454/Fitness_Health_Monitor_Pipeline",
@@ -245,7 +246,7 @@ const projects = {
       subtitle:
         "High-accuracy OCR model for constrained license plate recognition",
 
-      img_path: "project-monitoring.webp",
+      img_path: "project-car.jpg",
 
       // 👉 CARD
       description:
@@ -272,14 +273,12 @@ const projects = {
         { lang: "OCR", color: "#009688" },
         { lang: "Python", color: "#3572A5" },
         { lang: "Deep Learning", color: "#FF6F00" },
-        { lang: "Competition (Zindi)", color: "#2E7D32" },
+        { lang: "Competition (Kaggle)", color: "#2E7D32" },
       ],
 
-      demo: [
-        "https://user-images.githubusercontent.com/57320216/166916670-03dfabe1-8c6c-471a-875c-8715354aa957.jpg",
-      ],
+      demo: [],
 
-      code: "https://github.com/Edgar454/Fitness_Health_Monitor_Pipeline",
+      code: "https://github.com/Edgar454/Mauritanian-license-plate-recognition",
       link: null,
     },
   ],
