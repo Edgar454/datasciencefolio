@@ -184,10 +184,7 @@
 
 .description {
   text-align: left;
-}
-
-.description {
-  text-align: left;
+  margin-top: auto; /* pushes content to the bottom */
 }
 
 .read-more {

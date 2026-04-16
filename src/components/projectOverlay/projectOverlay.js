@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./projectOverlay.css";
 
 export default function ProjectOverlay({ project, onClose }) {
+  const [selectedImage, setSelectedImage] = useState(null);
   if (!project) return null;
 
   return (
@@ -98,9 +99,36 @@ export default function ProjectOverlay({ project, onClose }) {
               </h3>
               <div className="overlay-demo">
                 {project.demo.slice(0, 4).map((item, i) => (
-                  <img key={i} src={item} alt={`demo-${i}`} />
+                  <img
+                    key={i}
+                    src={item}
+                    alt={`demo-${i}`}
+                    onClick={() => setSelectedImage(item)}
+                    style={{ cursor: "zoom-in" }}
+                  />
                 ))}
               </div>
+            </div>
+          )}
+          {/* IMAGE ZOOM */}
+          {selectedImage && (
+            <div
+              className="image-zoom-backdrop"
+              onClick={() => setSelectedImage(null)}
+            >
+              <img
+                src={selectedImage}
+                alt="zoomed"
+                className="image-zoom-content"
+                onClick={(e) => e.stopPropagation()}
+              />
+
+              <button
+                className="image-zoom-close"
+                onClick={() => setSelectedImage(null)}
+              >
+                ✕
+              </button>
             </div>
           )}
 
