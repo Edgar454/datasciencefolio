@@ -90,6 +90,8 @@ const projects = {
       // 👉 Demo
       demo: [
         "https://github.com/Edgar454/WhoIsTalking/blob/main/demo/WhoisTalking.png?raw=true",
+        "https://github.com/Edgar454/WhoIsTalking/blob/main/demo/screenshot.PNG?raw=true",
+        "https://github.com/Edgar454/WhoIsTalking/blob/main/demo/screenshot_2.PNG?raw=true",
       ],
 
       // 👉 Links
