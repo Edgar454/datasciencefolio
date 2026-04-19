@@ -142,6 +142,9 @@ const projects = {
       // 👉 Demo
       demo: [
         "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/architecture_diagram.png?raw=true",
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_home.png?raw=true",
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_news.png?raw=true",
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_summary.png?raw=true",
       ],
 
       // 👉 Links
