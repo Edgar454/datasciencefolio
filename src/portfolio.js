@@ -73,96 +73,46 @@ const competitiveSites = {
 const skills = {
   data: [
     {
-      title: "Data Engineering & Pipelines",
+      title: "Real-Time Data Systems",
       fileName: "DataEngineerImg",
       skills: [
-        "⚡ Design and implementation of scalable data pipelines (batch & streaming)",
-        "⚡ Data modeling and processing using SQL and distributed systems concepts",
-        "⚡ Workflow orchestration and automation of data processes",
-        "⚡ Monitoring and optimization of data pipelines for production reliability",
+        "⚡ Build real-time data pipelines for high-frequency market and event data",
+        "⚡ Design event-driven architectures with validation, routing, and fault handling",
+        "⚡ Ensure reliable processing under retries, failures, and concurrent workloads",
+        "⚡ Optimize ingestion and processing pipelines for low-latency execution",
       ],
       softwareSkills: [
+        {
+          skillName: "Kafka",
+          fontAwesomeClassname: "logos-kafka",
+          style: { color: "#231F20" },
+        },
+        {
+          skillName: "Spark",
+          fontAwesomeClassname: "logos-apache-spark",
+          style: { color: "#E25A1C" },
+        },
+        {
+          skillName: "Flink",
+          fontAwesomeClassname: "simple-icons:apacheflink",
+          style: { color: "#E6526F" },
+        },
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
           style: { color: "#3776AB" },
         },
-        {
-          skillName: "SQL",
-          fontAwesomeClassname: "logos-postgresql",
-          style: { color: "#336791" },
-        },
-        {
-          skillName: "Apache Spark",
-          fontAwesomeClassname: "logos-apache-spark",
-          style: {},
-        },
-        {
-          skillName: "Apache Kafka",
-          fontAwesomeClassname: "logos-kafka",
-          style: {},
-        },
-        {
-          skillName: "Airflow",
-          fontAwesomeClassname: "logos-airflow",
-          style: {},
-        },
       ],
     },
+
     {
-      title: "Data Systems & Architecture",
-      fileName: "DataArchitectureImg",
-      skills: [
-        "⚡ Design of data-centric architectures for scalable applications",
-        "⚡ Structuring data flows between APIs, services, and storage systems",
-        "⚡ Backend system design focused on scalability and maintainability",
-        "⚡ Integration of data systems into production environments",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Redis",
-          fontAwesomeClassname: "logos-redis",
-        },
-        {
-          skillName: "SQL",
-          fontAwesomeClassname: "logos-postgresql",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "logos-docker",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Grafana",
-          fontAwesomeClassname: "logos-grafana",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Prometheus",
-          fontAwesomeClassname: "logos-prometheus",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-      ],
-    },
-    {
-      title: "AI & Applied Systems",
+      title: "AI & Production ML Systems",
       fileName: "AIEngImg",
       skills: [
-        "⚡ Development of LLM-based applications (RAG, agents, workflow automation)",
-        "⚡ Integration of machine learning models into production systems via APIs",
-        "⚡ Design of intelligent automation systems powered by AI",
-        "⚡ Optimization of AI systems for reliability, cost, and performance",
+        "⚡ Deploy ML models into production APIs and data pipelines",
+        "⚡ Build LLM-based systems (RAG, agents, document intelligence workflows)",
+        "⚡ Optimize models for latency, cost, and inference efficiency",
+        "⚡ Design end-to-end AI systems from data ingestion to production output",
       ],
       softwareSkills: [
         {
@@ -172,7 +122,7 @@ const skills = {
         {
           skillName: "LangChain",
           fontAwesomeClassname: "simple-icons:langchain",
-          style: { color: "#7FC8FF" },
+          style: { color: "#0B3B5A" },
         },
         {
           skillName: "FastAPI",
@@ -184,13 +134,43 @@ const skills = {
           fontAwesomeClassname: "simple-icons:huggingface",
           style: { color: "#FFD21F" },
         },
+      ],
+    },
+
+    {
+      title: "Data Infrastructure & Backend Systems",
+      fileName: "DataArchitectureImg",
+      skills: [
+        "⚡ Design scalable data architectures for production-grade systems",
+        "⚡ Build caching, storage, and query optimization layers for performance",
+        "⚡ Implement secure service-to-service communication and system integration",
+        "⚡ Automate infrastructure and deployment workflows for reliability",
+      ],
+      softwareSkills: [
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
+          skillName: "Redis",
+          fontAwesomeClassname: "logos-redis",
+          style: { color: "#DC382D" },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "logos-postgresql",
+          style: { color: "#336791" },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "logos-docker",
+          style: { color: "#2496ED" },
+        },
+        {
+          skillName: "Prometheus",
+          fontAwesomeClassname: "logos-prometheus",
+          style: { color: "#E6522C" },
+        },
+        {
+          skillName: "Grafana",
+          fontAwesomeClassname: "logos-grafana",
+          style: { color: "#F46800" },
         },
       ],
     },
@@ -201,7 +181,7 @@ const skills = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "A collection of production-oriented systems spanning data engineering, real-time pipelines, and applied AI. Each project focuses on building reliable, scalable, and observable systems rather than isolated prototypes.",
 };
 
 const resumeleft = {
@@ -210,69 +190,67 @@ const resumeleft = {
     data: [
       {
         title: "Founding Platform Engineer",
-        subtitle: "Indiquant",
+        subtitle: "Indiquant - India",
+        location: "India",
         date: "Feb 2026 - Present",
         content: [
-          "Founding engineer responsible for designing and building a data platform for financial systems, focusing on high-throughput processing, reliability, and secure service-to-service communication.",
+          "Built data pipelines for the NIFTY 200 universe to handle daily market data ingestion, historical data reprocessing, and obfuscated dataset generation. Designed for safe, repeatable execution (idempotent workflows), enabling full 5-year reprocessing in ~3 minutes using parallel workers (4 replicas).",
 
-          "Designed and implemented end-to-end data pipelines (ingestion, processing, and asynchronous scraping) handling large volumes of market data with validation, batching, and concurrency control.",
+          "Designed distributed workflows ensuring data consistency under concurrent execution, preventing duplication and data loss during retries and failure scenarios.",
 
-          "Engineered distributed workflows with strong consistency guarantees, implementing idempotent processing, reconciliation logic, and request coalescing to prevent data loss, race conditions, and database overload.",
+          "Implemented Redis-based caching for time-series market data using a gap-aware retrieval strategy, reducing redundant database queries and improving response times for range-based data access patterns.",
 
-          "Architected a resilient time-series data model with strict idempotency guarantees, ensuring consistent writes under concurrent workloads and failure scenarios.",
+          "Built a centralized observability system (metrics, logs, dashboards) providing system-level visibility into data pipelines and enabling early detection of inconsistencies beyond component-level health checks.",
 
-          "Optimized performance using Redis-based caching strategies, reducing database load and improving query response times for time-series data.",
+          "Built shell-based abstractions over infrastructure systems (Vault PKI automation, database provisioning, blob storage access), enabling developers to provision secure resources without managing certificates or low-level permissions, significantly reducing operational overhead and onboarding complexity.",
 
-          "Built a full observability stack (Prometheus, Grafana, Loki, PostgreSQL exporters) to monitor pipeline health, system behavior, and production performance.",
+          "Implemented secure service-to-service communication with automated certificate management, ensuring encrypted and authenticated interactions without manual credential handling.",
 
-          "Developed internal tooling to simplify data infrastructure usage (data access, pipeline configuration, permissions), improving developer productivity and reducing operational errors.",
+          "Designed a layered access control system combining certificate-based identity for service-to-service communication, RBAC for human operators, and network isolation to limit blast radius across infrastructure.",
 
-          "Implemented a zero-trust security model using mTLS and HashiCorp Vault (PKI, automated certificate rotation) for secure service-to-service communication.",
-
-          "Designed and enforced access control policies (RBAC, certificate-based identity, network isolation) to protect critical data resources.",
-
-          "Automated CI/CD workflows using GitHub Actions and Makefiles, enabling reproducible deployments and reliable system evolution.",
+          "Built reproducible CI/CD pipelines using GitHub Actions and Makefiles, ensuring consistent, automated deployments across staging and production environments with identical build and runtime behavior.",
         ],
       },
       {
         title: "Data Engineer Intern",
-        subtitle: "Lotus Capital",
+        subtitle: "Lotus Capital - Morocco",
         date: "Aug 2025 - Jan 2026",
         content: [
-          "Designed and implemented secure, high-performance data pipelines for user submissions and market data, enabling real-time validation, obfuscation, and transformation.",
+          "Built a real-time data processing system for user submissions and market data, enabling ingestion, validation, and transformation with low-latency processing (sub-200ms end-to-end) under production load.",
 
-          "Built distributed, event-driven systems using Kafka, Flink, RabbitMQ, and containerized microservices with high-availability configurations.",
+          "Designed an event-driven streaming architecture where Kafka handled ingestion, Flink performed real-time validation and business rule enforcement, and validated events were routed to downstream scoring systems.",
 
-          "Developed scalable batch processing pipelines using Spark, supporting fault-tolerant data processing across large datasets.",
+          "Implemented a schema governance layer using an Avro-based schema registry to ensure compatibility across Kafka, Flink, and Spark, enforcing consistent data contracts across the entire pipeline.",
 
-          "Implemented data validation and schema enforcement strategies to ensure consistency and reliability across evolving data systems.",
+          "Designed a correctness-aware routing mechanism that separated valid and invalid events in real time, sending malformed or inconsistent data to a dead-letter queue while forwarding clean data to batch scoring pipelines.",
 
-          "Monitored production systems using Prometheus and Grafana, identifying bottlenecks and improving pipeline performance.",
+          "Built Spark-based batch processing pipelines for downstream analytics and scoring, supporting fault-tolerant reprocessing of large historical datasets without data loss.",
 
-          "Developed unit and integration tests with pytest and GitHub Actions to ensure reliability and correctness of data workflows.",
+          "Identified and resolved a stream processing bottleneck where ingestion throughput exceeded processing capacity, tuning parallelism and resource allocation to stabilize system throughput and prevent queue buildup under load.",
 
-          "Achieved sub-200ms end-to-end validation latency in a high-throughput environment.",
-
-          "Collaborated on improving data engineering practices, contributing to more robust and maintainable data infrastructure.",
+          "Implemented automated testing pipelines (unit and integration tests) using pytest and GitHub Actions CI/CD to validate data transformation logic and prevent schema and consistency regressions before production deployment.",
         ],
       },
       {
-        title: "Data Scientist Intern",
-        subtitle: "MEDTECH",
+        title: "Machine Learning Intern (Document AI)",
+        subtitle: "B2B ESI Internship - MEDTECH",
         date: "Mar 2024 - Sep 2024",
         content: [
-          "Developed AI models for extracting structured information from document images, automating data extraction workflows.",
+          "Worked on adapting Donut (Document Understanding Transformer) for structured information extraction from bank receipts, focusing on OCR-free document understanding pipelines.",
 
-          "Optimized model performance using quantization, knowledge distillation, and efficient fine-tuning techniques.",
+          "Explored model adaptation strategies to improve robustness across heterogeneous receipt formats, including experiments with shared encoders and task-specific decoders for multi-receipt parsing.",
 
-          "Implemented monitoring and explainability tools to analyze model behavior and improve reliability.",
+          "Evaluated multiple parameter-efficient fine-tuning approaches (LoRA, QLoRA, adapters) as well as compression techniques such as quantization and knowledge distillation to improve inference efficiency under constrained resources.",
 
-          "Documented end-to-end workflows to ensure reproducibility and facilitate collaboration.",
+          "Prototyped and tested alternative multi-adapter architectures allowing a shared backbone to generate specialized outputs per document type, and analyzed trade-offs between performance and architectural complexity.",
+
+          "Documented experimental findings and model behaviors across iterations to support reproducibility and guide future model design decisions.",
         ],
       },
       {
         title: "Statistician Intern",
-        subtitle: "DDAEP (Agriculture, Fisheries and Livestock Department)",
+        subtitle:
+          "DDAEP (Agriculture, Fisheries and Livestock Department of Borgou) - Benin",
         date: "Jul 2021 - Aug 2021",
         content: [
           "Designed data collection methodologies and survey tools for agricultural data gathering.",

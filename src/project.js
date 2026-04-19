@@ -9,7 +9,7 @@ const projects = {
 
       // 👉 CARD
       description:
-        "Designed a secure and observable data platform to ingest, store, and analyze cryptocurrency market data using event-driven architecture and zero-trust security.",
+        "Production-grade system for high-frequency crypto data ingestion and processing, combining event-driven pipelines, strict security boundaries, and full observability across the stack.",
 
       // 👉 OVERLAY
       problem:
@@ -59,7 +59,7 @@ const projects = {
 
       // 👉 CARD ONLY
       description:
-        "Automatically analyzes audio conversations to identify speakers, segment dialogue turns, and transcribe speech into structured text.",
+        "Audio processing system for speaker diarization and transcription, designed around asynchronous task execution for scalable long-running inference workloads.",
 
       // 👉 OVERLAY
       problem:
@@ -107,7 +107,7 @@ const projects = {
 
       // 👉 CARD ONLY
       description:
-        "End-to-end news intelligence platform that transforms fragmented African news into structured insights through classification, summarization, and knowledge graph analysis.",
+        "News intelligence platform providing real-time exploration, weekly structured summaries, and entity graph analytics with temporal tracking of relationship and importance changes.",
 
       // 👉 OVERLAY
       problem:
@@ -160,7 +160,7 @@ const projects = {
 
       // 👉 CARD
       description:
-        "Built an automated system to track and analyze personal health metrics (sleep, steps, calories) using Google Fit data and a full data engineering stack.",
+        "Personal data pipeline for ingesting and analyzing health metrics, enabling structured tracking of behavioral trends through dashboards and analytics.",
 
       // 👉 OVERLAY
       problem:
@@ -208,7 +208,7 @@ const projects = {
 
       // 👉 CARD
       description:
-        "Built an AI-powered study assistant using an agent-based workflow with asynchronous task processing, caching, and monitoring.",
+        "Learning system that transforms unstructured study material into structured knowledge artifacts (summaries, quizzes, flashcards), improving comprehension and long-term retention.",
 
       // 👉 OVERLAY
       problem:

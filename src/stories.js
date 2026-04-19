@@ -8,6 +8,41 @@ const Stories = [
   {
     author: "Edgar",
     image:
+      "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg",
+    date: "Apr 2026",
+
+    title: "A Healthy System Isn’t Always a Correct System",
+    subtitle: "Designing a control plane to validate system invariants",
+
+    description:
+      "Why traditional monitoring is not enough and how I introduced a control plane to ensure system correctness.",
+
+    sections: {
+      context:
+        "As a founding platform engineer, I built critical infrastructure components including ETL pipelines, database systems, caching layers, and deployment pipelines. These systems were monitored using logs and metrics (Prometheus and Grafana), which provided visibility into component health.",
+
+      problem:
+        "While components appeared healthy, the system could still be incorrect. Self-healing mechanisms masked issues such as silent data loss, cache inconsistencies (metadata indicating data that wasn’t actually present), high cache miss rates, or partially failed ETL pipelines that recovered but left corrupted or incomplete data. Traditional monitoring answered 'is the system running?' but not 'is the system correct?'",
+
+      solution:
+        "I started designing a control plane focused on system-level correctness rather than component health. This involved defining and monitoring system invariants such as data consistency (e.g. transformed data matches source data), cache integrity (metadata aligned with actual stored data), and expected data flow behavior. In addition to logs and metrics, I incorporated tracing to follow data paths across the system and identify bottlenecks or inconsistencies.",
+
+      insights:
+        "This experience highlighted that observability must go beyond logs and metrics. A system can be fully operational yet incorrect. By introducing invariant-based monitoring and system-level visibility, I shifted from reactive debugging to proactive validation. It reinforced the idea that reliability is not just about uptime, but about correctness and trust in the data.",
+    },
+
+    tags: [
+      "Observability",
+      "System Design",
+      "Data Engineering",
+      "Monitoring",
+      "Tracing",
+      "Reliability",
+    ],
+  },
+  {
+    author: "Edgar",
+    image:
       "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg",
     date: "Apr 2026",
 
@@ -140,41 +175,6 @@ const Stories = [
       "Kafka",
       "MinIO",
       "Vault",
-    ],
-  },
-  {
-    author: "Edgar",
-    image:
-      "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg",
-    date: "Apr 2026",
-
-    title: "A Healthy System Isn’t Always a Correct System",
-    subtitle: "Designing a control plane to validate system invariants",
-
-    description:
-      "Why traditional monitoring is not enough and how I introduced a control plane to ensure system correctness.",
-
-    sections: {
-      context:
-        "As a founding platform engineer, I built critical infrastructure components including ETL pipelines, database systems, caching layers, and deployment pipelines. These systems were monitored using logs and metrics (Prometheus and Grafana), which provided visibility into component health.",
-
-      problem:
-        "While components appeared healthy, the system could still be incorrect. Self-healing mechanisms masked issues such as silent data loss, cache inconsistencies (metadata indicating data that wasn’t actually present), high cache miss rates, or partially failed ETL pipelines that recovered but left corrupted or incomplete data. Traditional monitoring answered 'is the system running?' but not 'is the system correct?'",
-
-      solution:
-        "I started designing a control plane focused on system-level correctness rather than component health. This involved defining and monitoring system invariants such as data consistency (e.g. transformed data matches source data), cache integrity (metadata aligned with actual stored data), and expected data flow behavior. In addition to logs and metrics, I incorporated tracing to follow data paths across the system and identify bottlenecks or inconsistencies.",
-
-      insights:
-        "This experience highlighted that observability must go beyond logs and metrics. A system can be fully operational yet incorrect. By introducing invariant-based monitoring and system-level visibility, I shifted from reactive debugging to proactive validation. It reinforced the idea that reliability is not just about uptime, but about correctness and trust in the data.",
-    },
-
-    tags: [
-      "Observability",
-      "System Design",
-      "Data Engineering",
-      "Monitoring",
-      "Tracing",
-      "Reliability",
     ],
   },
 ];
