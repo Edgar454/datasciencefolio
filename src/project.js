@@ -99,107 +99,6 @@ const projects = {
       link: null,
     },
     {
-      title: "CUPS Print Management Platform",
-      subtitle:
-        "Distributed print orchestration system with job scheduling and observability",
-
-      img_path: "project-cups.jpg",
-
-      // 👉 CARD
-      description:
-        "Containerized print management system built around CUPS with asynchronous job processing, worker coordination, and full observability.",
-
-      // 👉 OVERLAY
-      problem:
-        "Print systems become unreliable at scale due to job failures, lack of visibility, and difficulty coordinating concurrent workers, leading to lost or duplicated jobs.",
-
-      solution:
-        "Built a distributed print orchestration platform using FastAPI, PostgreSQL, and CUPS with event-driven scheduling, worker coordination via row locking, and full system observability.",
-
-      features: [
-        "Event-driven job orchestration using PostgreSQL LISTEN/NOTIFY",
-        "Worker coordination with row-level locking (SKIP LOCKED)",
-        "Automatic retry and recovery of failed jobs",
-        "IPP integration with CUPS print server",
-        "Distributed tracing across API, workers, and execution",
-        "Observability stack with Prometheus, Grafana, and Tempo",
-        "Idempotent job creation with deduplication",
-        "Fully containerized multi-service deployment",
-      ],
-
-      tags: [
-        { lang: "FastAPI", color: "#009688" },
-        { lang: "PostgreSQL", color: "#336791" },
-        { lang: "CUPS / IPP", color: "#6A1B9A" },
-        { lang: "Docker", color: "#2496ED" },
-        { lang: "Observability", color: "#F46800" },
-        { lang: "Distributed Systems", color: "#2E7D32" },
-      ],
-
-      demo: [
-        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsPipeline.png?raw=true",
-        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsUi.PNG?raw=true",
-        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsMasterDashboard.PNG?raw=true",
-        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsCI.PNG?raw=true",
-      ],
-
-      code: "https://github.com/Edgar454/CUPS_printer_management_system",
-      link: null,
-    },
-    {
-      title: "Insight Africa",
-      subtitle:
-        "NLP + Data Engineering platform for structured news intelligence",
-
-      img_path: "news.gif",
-
-      // 👉 CARD ONLY
-      description:
-        "News intelligence platform providing real-time exploration, weekly structured summaries, and entity graph analytics with temporal tracking of relationship and importance changes.",
-
-      // 👉 OVERLAY
-      problem:
-        "News in Africa is highly fragmented across multiple sources, making it difficult to quickly identify key narratives, track entities, and understand relationships between events.",
-
-      solution:
-        "Built a system that continuously ingests news articles and transforms them into structured intelligence by classifying topics, extracting entities and relationships, and generating summaries and knowledge graphs that make trends and connections easy to explore.",
-
-      features: [
-        "Automated ingestion of RSS news feeds (~1000 articles/day)",
-        "Streaming pipeline for data processing (Airflow + Kafka)",
-        "LLM-based classification and summarization (Mistral API)",
-        "Entity and relationship extraction for knowledge graph construction",
-        "Graph analytics (communities, centrality, PageRank)",
-        "FastAPI backend exposing structured insights",
-        "React frontend for exploration and visualization",
-      ],
-
-      // 👉 Tech stack
-      tags: [
-        { lang: "Python", color: "#3572A5" },
-        { lang: "Airflow", color: "#017CEE" },
-        { lang: "Kafka", color: "#231F20" },
-        { lang: "Spark", color: "#E25A1C" },
-        { lang: "PostgreSQL", color: "#336791" },
-        { lang: "FastAPI", color: "#009688" },
-        { lang: "React", color: "#61DAFB" },
-        { lang: "LLMs (Mistral)", color: "#FF6B6B" },
-        { lang: "NetworkX", color: "#4C78A8" },
-      ],
-
-      // 👉 Demo
-      demo: [
-        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/architecture_diagram.png?raw=true",
-        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_home.png?raw=true",
-        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_news.png?raw=true",
-        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_summary.png?raw=true",
-      ],
-
-      // 👉 Links
-      code: "https://github.com/Edgar454/African_News_Analyzer_Pipeline",
-      link: null,
-    },
-    {
       title: "Fitness Health Monitoring System",
       subtitle:
         "Automated personal health analytics with data ingestion and observability",
@@ -293,6 +192,107 @@ const projects = {
       ],
 
       code: "https://github.com/Edgar454/AI_study_Buddy",
+    },
+    {
+      title: "CUPS Print Management Platform",
+      subtitle:
+        "Distributed print orchestration system with job scheduling and observability",
+
+      img_path: "project-cups.jpg",
+
+      // 👉 CARD
+      description:
+        "Containerized print management system built around CUPS with asynchronous job processing, worker coordination, and full observability.",
+
+      // 👉 OVERLAY
+      problem:
+        "Print systems become unreliable at scale due to job failures, lack of visibility, and difficulty coordinating concurrent workers, leading to lost or duplicated jobs.",
+
+      solution:
+        "Built a distributed print orchestration platform using FastAPI, PostgreSQL, and CUPS with event-driven scheduling, worker coordination via row locking, and full system observability.",
+
+      features: [
+        "Event-driven job orchestration using PostgreSQL LISTEN/NOTIFY",
+        "Worker coordination with row-level locking (SKIP LOCKED)",
+        "Automatic retry and recovery of failed jobs",
+        "IPP integration with CUPS print server",
+        "Distributed tracing across API, workers, and execution",
+        "Observability stack with Prometheus, Grafana, and Tempo",
+        "Idempotent job creation with deduplication",
+        "Fully containerized multi-service deployment",
+      ],
+
+      tags: [
+        { lang: "FastAPI", color: "#009688" },
+        { lang: "PostgreSQL", color: "#336791" },
+        { lang: "CUPS / IPP", color: "#6A1B9A" },
+        { lang: "Docker", color: "#2496ED" },
+        { lang: "Observability", color: "#F46800" },
+        { lang: "Distributed Systems", color: "#2E7D32" },
+      ],
+
+      demo: [
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/master/assets/CupsPipeline.png?raw=true",
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/master/assets/CupsUi.PNG?raw=true",
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/master/assets/CupsMasterDashboard.PNG?raw=true",
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/master/assets/CupsCI.PNG?raw=true",
+      ],
+
+      code: "https://github.com/Edgar454/CUPS_printer_management_system",
+      link: null,
+    },
+    {
+      title: "Insight Africa",
+      subtitle:
+        "NLP + Data Engineering platform for structured news intelligence",
+
+      img_path: "news.gif",
+
+      // 👉 CARD ONLY
+      description:
+        "News intelligence platform providing real-time exploration, weekly structured summaries, and entity graph analytics with temporal tracking of relationship and importance changes.",
+
+      // 👉 OVERLAY
+      problem:
+        "News in Africa is highly fragmented across multiple sources, making it difficult to quickly identify key narratives, track entities, and understand relationships between events.",
+
+      solution:
+        "Built a system that continuously ingests news articles and transforms them into structured intelligence by classifying topics, extracting entities and relationships, and generating summaries and knowledge graphs that make trends and connections easy to explore.",
+
+      features: [
+        "Automated ingestion of RSS news feeds (~1000 articles/day)",
+        "Streaming pipeline for data processing (Airflow + Kafka)",
+        "LLM-based classification and summarization (Mistral API)",
+        "Entity and relationship extraction for knowledge graph construction",
+        "Graph analytics (communities, centrality, PageRank)",
+        "FastAPI backend exposing structured insights",
+        "React frontend for exploration and visualization",
+      ],
+
+      // 👉 Tech stack
+      tags: [
+        { lang: "Python", color: "#3572A5" },
+        { lang: "Airflow", color: "#017CEE" },
+        { lang: "Kafka", color: "#231F20" },
+        { lang: "Spark", color: "#E25A1C" },
+        { lang: "PostgreSQL", color: "#336791" },
+        { lang: "FastAPI", color: "#009688" },
+        { lang: "React", color: "#61DAFB" },
+        { lang: "LLMs (Mistral)", color: "#FF6B6B" },
+        { lang: "NetworkX", color: "#4C78A8" },
+      ],
+
+      // 👉 Demo
+      demo: [
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/architecture_diagram.png?raw=true",
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_home.png?raw=true",
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_news.png?raw=true",
+        "https://github.com/Edgar454/African_News_Analyzer_Pipeline/blob/main/assets/screenshot_summary.png?raw=true",
+      ],
+
+      // 👉 Links
+      code: "https://github.com/Edgar454/African_News_Analyzer_Pipeline",
+      link: null,
     },
     {
       title: "Mauritanian Plate Detection Challenge",
