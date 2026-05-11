@@ -99,6 +99,54 @@ const projects = {
       link: null,
     },
     {
+      title: "CUPS Print Management Platform",
+      subtitle:
+        "Distributed print orchestration system with job scheduling and observability",
+
+      img_path: "project-cups.jpg",
+
+      // 👉 CARD
+      description:
+        "Containerized print management system built around CUPS with asynchronous job processing, worker coordination, and full observability.",
+
+      // 👉 OVERLAY
+      problem:
+        "Print systems become unreliable at scale due to job failures, lack of visibility, and difficulty coordinating concurrent workers, leading to lost or duplicated jobs.",
+
+      solution:
+        "Built a distributed print orchestration platform using FastAPI, PostgreSQL, and CUPS with event-driven scheduling, worker coordination via row locking, and full system observability.",
+
+      features: [
+        "Event-driven job orchestration using PostgreSQL LISTEN/NOTIFY",
+        "Worker coordination with row-level locking (SKIP LOCKED)",
+        "Automatic retry and recovery of failed jobs",
+        "IPP integration with CUPS print server",
+        "Distributed tracing across API, workers, and execution",
+        "Observability stack with Prometheus, Grafana, and Tempo",
+        "Idempotent job creation with deduplication",
+        "Fully containerized multi-service deployment",
+      ],
+
+      tags: [
+        { lang: "FastAPI", color: "#009688" },
+        { lang: "PostgreSQL", color: "#336791" },
+        { lang: "CUPS / IPP", color: "#6A1B9A" },
+        { lang: "Docker", color: "#2496ED" },
+        { lang: "Observability", color: "#F46800" },
+        { lang: "Distributed Systems", color: "#2E7D32" },
+      ],
+
+      demo: [
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsPipeline.png?raw=true",
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsUi.PNG?raw=true",
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsMasterDashboard.PNG?raw=true",
+        "https://github.com/Edgar454/CUPS_printer_management_system/blob/main/assets/CupsCI.PNG?raw=true",
+      ],
+
+      code: "https://github.com/Edgar454/CUPS_printer_management_system",
+      link: null,
+    },
+    {
       title: "Insight Africa",
       subtitle:
         "NLP + Data Engineering platform for structured news intelligence",

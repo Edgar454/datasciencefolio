@@ -292,6 +292,7 @@ const resumeright = {
           title: "Competitive ML & Applied AI Rankings",
           content: [
             "#1/20 – License Plate Detection Challenge (Kaggle)",
+            "#1 team - Karima AI Hackaton 2025",
             "#26/333 – GeoAI NO2 Estimation Challenge (Zindi)",
             "#35/258 – Crop Disease Detection Challenge (Zindi)",
             "#62/245 – Root Volume Estimation Challenge (Zindi)",
