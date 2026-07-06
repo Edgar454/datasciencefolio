@@ -1,6 +1,59 @@
 const projects = {
   list: [
     {
+      title: "Wikipedia Attention Observatory",
+
+      subtitle:
+        "Semantic analytics platform for analyzing collective attention across Wikipedia",
+
+      img_path: "project-wikipedia.jpg",
+
+      // 👉 CARD
+      description:
+        "Production-grade analytics platform that transforms Wikimedia pageviews into an entity-centric warehouse for analyzing how collective attention evolves across languages, communities, and time.",
+
+      // 👉 OVERLAY
+      problem:
+        "Wikipedia publishes billions of pageviews every day, but the data is available only at the page level. The same concept exists under different titles and languages, making cross-language analysis, trend detection, and entity-level analytics difficult without semantic reconciliation.",
+
+      solution:
+        "Built a cloud-native analytics platform that reconciles Wikipedia pages into Wikidata entities, models attention using dbt and BigQuery, automates deployment with Terraform and GitHub Actions, and exposes interactive dashboards through Power BI with full pipeline observability.",
+
+      features: [
+        "Semantic reconciliation of Wikipedia pages using Wikidata sitelinks",
+        "Entity-centric dimensional warehouse built with dbt",
+        "Cross-language attention analysis across 300+ Wikipedia communities",
+        "Trend, burst, and anomaly detection dashboards",
+        "Infrastructure-as-Code deployment using Terraform",
+        "Automated orchestration with AWS Fargate and GitHub Actions",
+        "Pipeline observability using CloudWatch and BigQuery telemetry",
+        "Interactive Power BI dashboards for attention exploration",
+      ],
+
+      tags: [
+        { lang: "BigQuery", color: "#4285F4" },
+        { lang: "dbt", color: "#FF694B" },
+        { lang: "AWS", color: "#FF9900" },
+        { lang: "Terraform", color: "#844FBA" },
+        { lang: "Power BI", color: "#F2C811" },
+        { lang: "GitHub Actions", color: "#2088FF" },
+        { lang: "CloudWatch", color: "#FF4F8B" },
+        { lang: "Python", color: "#3776AB" },
+      ],
+
+      demo: [
+        "https://github.com/Edgar454/wikipedia-analytics-warehouse/blob/main/assets/dashboard_1.png?raw=true",
+        "https://github.com/Edgar454/wikipedia-analytics-warehouse/blob/main/assets/github_actions_pipeline.PNG?raw=true",
+        "https://github.com/Edgar454/wikipedia-analytics-warehouse/blob/main/assets/dbt_lineage.PNG?raw=true",
+        "https://github.com/Edgar454/wikipedia-analytics-warehouse/blob/main/assets/architecture_diagram.png?raw=true",
+      ],
+
+      code: "https://github.com/Edgar454/wikipedia-analytics-warehouse",
+      link:
+        "https://app.fabric.microsoft.com/view?r=eyJrIjoiYzVhYmFlYTctOWE4Zi00ZjgxLWIzYjgtNjI4NWRjODIzNGRiIiwidCI6ImNjNTA2ODBjLTBmZTctNGQ5YS04ZWVkLTRjNWE1NjZkYzYxNSJ9",
+    },
+
+    {
       title: "Crypto Market Data Platform",
       subtitle:
         "Secure, observable data platform for market ingestion and analysis",
