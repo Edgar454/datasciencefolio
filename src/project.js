@@ -6,7 +6,7 @@ const projects = {
       subtitle:
         "Semantic analytics platform for analyzing collective attention across Wikipedia",
 
-      img_path: "project-wikipedia.pngo",
+      img_path: "project-wikipedia.png",
 
       // 👉 CARD
       description:
